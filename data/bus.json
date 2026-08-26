@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "city": "Bolu",
+    "provider": "Bolu Ulaşım (mock)",
+    "mode": "live",
+    "note": "mode: 'live' | 'schedule'. Canlı API yoksa mode değerini schedule yapman yeterli. Araç konumları sahte; ileride vehicles kaynağı gerçek API ile değiştirilebilir."
+  },
+  "config": {
+    "avgSpeedKmh": 28,
+    "refreshMs": 4000,
+    "mapCenter": [40.7356, 31.6066]
+  },
+  "stops": [
+    {
+      "id": "terminal",
+      "name": "Şehir Terminali",
+      "lat": 40.7398,
+      "lng": 31.6089,
+      "landmark": "Otogar"
+    },
+    {
+      "id": "belediye",
+      "name": "Belediye Durağı",
+      "lat": 40.7364,
+      "lng": 31.6081,
+      "landmark": "Bolu Belediyesi"
+    },
+    {
+      "id": "izzet-baysal",
+      "name": "İzzet Baysal Caddesi",
+      "lat": 40.7331,
+      "lng": 31.6012,
+      "landmark": "Merkez"
+    },
+    {
+      "id": "hastane",
+      "name": "İzzet Baysal Hastanesi",
+      "lat": 40.7288,
+      "lng": 31.5874,
+      "landmark": "Hastane"
+    },
+    {
+      "id": "universite-kavsak",
+      "name": "Üniversite Kavşağı",
+      "lat": 40.7224,
+      "lng": 31.5488,
+      "landmark": "Kampüs yolu"
+    },
+    {
+      "id": "kampus-giris",
+      "name": "Kampüs Giriş",
+      "lat": 40.7168,
+      "lng": 31.5216,
+      "landmark": "Gölköy"
+    },
+    {
+      "id": "muhendislik",
+      "name": "Mühendislik Fakültesi",
+      "lat": 40.7149,
+      "lng": 31.5162,
+      "landmark": "BAİBÜ"
+    }
+  ],
+  "routes": [
+    {
+      "id": "hat-14",
+      "code": "14",
+      "name": "Terminal – Gölköy Kampüs",
+      "color": "#10B981",
+      "stopIds": ["terminal", "belediye", "izzet-baysal", "hastane", "universite-kavsak", "kampus-giris", "muhendislik"],
+      "schedule": {
+        "weekdays": ["07:10", "07:40", "08:10", "08:40", "09:20", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "16:40", "17:20", "18:00", "19:00"],
+        "saturday": ["08:00", "09:00", "10:30", "12:00", "14:00", "16:00", "18:00"],
+        "sunday": ["09:00", "11:00", "13:00", "16:00", "18:00"]
+      }
+    },
+    {
+      "id": "hat-5",
+      "code": "5",
+      "name": "Hastane – Kampüs",
+      "color": "#34D399",
+      "stopIds": ["hastane", "universite-kavsak", "kampus-giris", "muhendislik"],
+      "schedule": {
+        "weekdays": ["07:25", "08:05", "08:45", "10:15", "12:15", "14:15", "16:15", "17:45"],
+        "saturday": ["08:30", "11:00", "14:00", "17:00"],
+        "sunday": []
+      }
+    },
+    {
+      "id": "hat-22",
+      "code": "22",
+      "name": "Merkez – Kampüs Ring",
+      "color": "#059669",
+      "stopIds": ["belediye", "izzet-baysal", "universite-kavsak", "kampus-giris", "muhendislik"],
+      "schedule": {
+        "weekdays": ["07:50", "08:30", "09:10", "11:10", "13:10", "15:10", "17:00", "18:20"],
+        "saturday": ["09:00", "12:00", "15:00", "18:00"],
+        "sunday": ["10:00", "14:00", "18:00"]
+      }
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "bus-14-a",
+      "routeId": "hat-14",
+      "plate": "14 BL 014",
+      "heading": "kampüs",
+      "progress": 0.18,
+      "occupancy": "orta"
+    },
+    {
+      "id": "bus-14-b",
+      "routeId": "hat-14",
+      "plate": "14 BL 114",
+      "heading": "kampüs",
+      "progress": 0.52,
+      "occupancy": "yoğun"
+    },
+    {
+      "id": "bus-5-a",
+      "routeId": "hat-5",
+      "plate": "14 BL 005",
+      "heading": "kampüs",
+      "progress": 0.22,
+      "occupancy": "az"
+    },
+    {
+      "id": "bus-22-a",
+      "routeId": "hat-22",
+      "plate": "14 BL 022",
+      "heading": "kampüs",
+      "progress": 0.38,
+      "occupancy": "orta"
+    }
+  ]
+}

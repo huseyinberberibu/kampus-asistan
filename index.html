@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kampüs Asistan · Yurt hayatı, tek yerde</title>
+  <meta name="description" content="Bilgisayar mühendisliği öğrencileri için yemek listesi, not hesabı, Bolu otobüs takibi ve ders programı.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-toolbar">
+      <div class="container header-toolbar-inner">
+        <span><i class="fa-solid fa-location-dot"></i> Bolu · Gölköy Kampüs</span>
+        <span><i class="fa-solid fa-envelope"></i> asistan@kampus.local</span>
+      </div>
+    </div>
+    <div class="container header-bar">
+      <a class="logo" href="index.html">
+        <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+        Kampüs<span>Asistan</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menü" aria-expanded="false"><span></span></button>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Ana Sayfa</a>
+        <a href="yemek.html">Yemek Listesi</a>
+        <a href="puan.html">Puan Hesaplama</a>
+        <a href="otobus.html">Otobüsüm Nerede</a>
+        <a href="ders-programi.html">Ders Programı</a>
+        <a class="nav-cta" href="yemek.html">Bugünün menüsü</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="kicker">Bilgisayar mühendisliği · yurt asistanı</p>
+      <h1>Yurt hayatın, <span>tek ekranda</span></h1>
+      <p>Yemek listesi, harf notu hesabı, Bolu otobüs takibi ve haftalık ders programı. Sade, mobil uyumlu ve veri kaynağı JSON olduğu için sonra kolayca güncellenir.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="yemek.html"><i class="fa-solid fa-utensils"></i> Yemek listesi</a>
+        <a class="btn btn-ghost" href="otobus.html"><i class="fa-solid fa-bus"></i> Otobüsüm nerede</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Dört <span>temel</span> araç</h2>
+        <div class="title-divider"><span class="line"></span><span class="box"></span><span class="line"></span></div>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card" href="yemek.html">
+          <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+          <h3>Yurt yemek listesi</h3>
+          <p>Tarih seç, kahvaltı ve akşam yemeğini kartlar halinde gör.</p>
+        </a>
+        <a class="feature-card" href="puan.html">
+          <div class="feature-icon"><i class="fa-solid fa-calculator"></i></div>
+          <h3>Puan hesaplama</h3>
+          <p>Hedef harf için gereken final notunu ve dönem ortalamasını hesapla.</p>
+        </a>
+        <a class="feature-card" href="otobus.html">
+          <div class="feature-icon"><i class="fa-solid fa-bus"></i></div>
+          <h3>Otobüsüm nerede</h3>
+          <p>Bolu hatları için mock konum ve tahmini varış. İleride tabloya dönüşebilir.</p>
+        </a>
+        <a class="feature-card" href="ders-programi.html">
+          <div class="feature-icon"><i class="fa-solid fa-table"></i></div>
+          <h3>Ders programı</h3>
+          <p>Güz / bahar sekmeleri, tıklanabilir dersler ve 14 haftalık müfredat.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container today-preview">
+      <div class="soft-card" data-home-menu>
+        <h3>Bugünün yemeği</h3>
+        <p>Yükleniyor…</p>
+      </div>
+      <div class="soft-card">
+        <h3>Hızlı not</h3>
+        <p>Veriler <code>data/</code> klasöründeki JSON dosyalarından okunuyor. Menü görselleri, gerçek otobüs API’si ve kesin müfredat sonradan eklenecek.</p>
+        <p class="hint">Canlı otobüs API’si bulunamazsa <code>data/bus.json</code> içinde <code>meta.mode</code> değerini <code>schedule</code> yapman yeterli.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Kampüs Asistan</h4>
+          <p>Yurt ve kampüs hayatını sadeleştirmek için lacivert–yeşil temalı öğrenci arayüzü.</p>
+        </div>
+        <div>
+          <h4>Sayfalar</h4>
+          <p><a href="yemek.html">Yemek listesi</a></p>
+          <p><a href="puan.html">Puan hesaplama</a></p>
+          <p><a href="otobus.html">Otobüsüm nerede</a></p>
+          <p><a href="ders-programi.html">Ders programı</a></p>
+        </div>
+        <div>
+          <h4>Kampüs</h4>
+          <p>Bolu · Gölköy</p>
+          <p>Bilgisayar Mühendisliği</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Kampüs Asistan</p>
+        <p>Örnek / mock veri ile çalışır</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

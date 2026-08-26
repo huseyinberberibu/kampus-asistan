@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otobüsüm Nerede · Kampüs Asistan</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-toolbar">
+      <div class="container header-toolbar-inner">
+        <span><i class="fa-solid fa-location-dot"></i> Bolu · Gölköy Kampüs</span>
+        <span><i class="fa-solid fa-envelope"></i> asistan@kampus.local</span>
+      </div>
+    </div>
+    <div class="container header-bar">
+      <a class="logo" href="index.html">
+        <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+        Kampüs<span>Asistan</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menü" aria-expanded="false"><span></span></button>
+      <nav class="site-nav">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="yemek.html">Yemek Listesi</a>
+        <a href="puan.html">Puan Hesaplama</a>
+        <a href="otobus.html" class="active">Otobüsüm Nerede</a>
+        <a href="ders-programi.html">Ders Programı</a>
+        <a class="nav-cta" href="yemek.html">Bugünün menüsü</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="kicker">Bolu ulaşım · mock arayüz</p>
+      <h1>Otobüsüm <span>nerede</span></h1>
+      <p class="breadcrumb"><a href="index.html">Ana sayfa</a> / Otobüsüm nerede</p>
+      <p>Canlı API yok: hatlar, duraklar ve araç koordinatları sahte JSON. Konum izni olmazsa durak seçerek devam edebilirsin.</p>
+    </div>
+  </section>
+
+  <section class="section" data-bus-page>
+    <div class="container">
+      <div class="fallback-banner" data-geo-banner>
+        <div>Konum izni isteniyor…</div>
+      </div>
+
+      <div class="soft-card" style="margin-top:16px">
+        <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+          <h3 style="margin:0">Hat seç</h3>
+          <span class="meal-label" data-mode-label>Mod</span>
+        </div>
+        <div class="chip-row" data-route-select style="margin-top:14px"></div>
+        <div class="field" style="margin-top:16px">
+          <label for="stop-select">Manuel durak (konum yoksa B planı)</label>
+          <select id="stop-select" data-stop-select></select>
+        </div>
+      </div>
+
+      <div class="bus-layout" style="margin-top:16px">
+        <div data-live-view>
+          <div class="map-panel">
+            <svg class="map-canvas" data-map role="img" aria-label="Sahte hat haritası"></svg>
+            <div class="map-legend">Yeşil çizgi: hat · B: otobüs · beyaz nokta: konum</div>
+          </div>
+          <div class="soft-card eta-card" data-eta style="margin-top:16px">
+            <p>Hat seçildiğinde tahmini süre burada görünür.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="soft-card hidden" data-schedule-view>
+            <h3>Statik sefer tablosu</h3>
+            <div class="timetable">
+              <table>
+                <tbody data-timetable-body></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="soft-card">
+            <h3>Duraklar</h3>
+            <ul class="stop-list" data-stops></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="soft-card" data-static-times style="margin-top:16px"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Kampüs Asistan</h4>
+          <p>Yurt ve kampüs hayatını sadeleştirmek için lacivert–yeşil temalı öğrenci arayüzü.</p>
+        </div>
+        <div>
+          <h4>Sayfalar</h4>
+          <p><a href="yemek.html">Yemek listesi</a></p>
+          <p><a href="puan.html">Puan hesaplama</a></p>
+          <p><a href="otobus.html">Otobüsüm nerede</a></p>
+          <p><a href="ders-programi.html">Ders programı</a></p>
+        </div>
+        <div>
+          <h4>Kampüs</h4>
+          <p>Bolu · Gölköy</p>
+          <p>Bilgisayar Mühendisliği</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Kampüs Asistan</p>
+        <p>Örnek / mock veri ile çalışır</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/bus.js"></script>
+</body>
+</html>

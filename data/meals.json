@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "source": "mock",
+    "campus": "Gölköy Kampüs Yemekhanesi",
+    "note": "Görseller ve tam menü sonradan entegre edilecek. image alanı şimdilik placeholder."
+  },
+  "meals": [
+    {
+      "date": "2026-08-24",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 620,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Haşlanmış yumurta", "image": null },
+          { "name": "Beyaz peynir", "image": null },
+          { "name": "Siyah zeytin", "image": null },
+          { "name": "Domates / salatalık", "image": null },
+          { "name": "Bal – tereyağı", "image": null },
+          { "name": "Çay", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 890,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Mercimek çorbası", "image": null },
+          { "name": "Tavuk sote", "image": null },
+          { "name": "Pirinç pilavı", "image": null },
+          { "name": "Mevsim salata", "image": null },
+          { "name": "Ayran", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-25",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 640,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Sucuklu yumurta", "image": null },
+          { "name": "Kaşar peynir", "image": null },
+          { "name": "Yeşil zeytin", "image": null },
+          { "name": "Simit", "image": null },
+          { "name": "Reçel", "image": null },
+          { "name": "Çay", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 920,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Ezogelin çorba", "image": null },
+          { "name": "Kıymalı makarna", "image": null },
+          { "name": "Cacık", "image": null },
+          { "name": "Turşu", "image": null },
+          { "name": "Meyve (elma)", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-26",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 610,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Omlet", "image": null },
+          { "name": "Lor peynir", "image": null },
+          { "name": "Siyah zeytin", "image": null },
+          { "name": "Bal", "image": null },
+          { "name": "Poğaça", "image": null },
+          { "name": "Süt", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 870,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Yayla çorbası", "image": null },
+          { "name": "Izgara köfte", "image": null },
+          { "name": "Bulgur pilavı", "image": null },
+          { "name": "Yoğurt", "image": null },
+          { "name": "Komposto", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-27",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 600,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Haşlanmış yumurta", "image": null },
+          { "name": "Beyaz peynir", "image": null },
+          { "name": "Tahin-pekmez", "image": null },
+          { "name": "Domates", "image": null },
+          { "name": "Ekmek", "image": null },
+          { "name": "Çay", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 910,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Tarhana çorbası", "image": null },
+          { "name": "Fırın tavuk", "image": null },
+          { "name": "Patates püresi", "image": null },
+          { "name": "Salata", "image": null },
+          { "name": "Sütlaç", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-28",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 655,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Menemen", "image": null },
+          { "name": "Kaşar", "image": null },
+          { "name": "Zeytin", "image": null },
+          { "name": "Tereyağı", "image": null },
+          { "name": "Simit", "image": null },
+          { "name": "Çay", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 880,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Domates çorbası", "image": null },
+          { "name": "Kuru fasulye", "image": null },
+          { "name": "Pirinç pilavı", "image": null },
+          { "name": "Turşu", "image": null },
+          { "name": "Hoşaf", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-29",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 630,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Sahanda yumurta", "image": null },
+          { "name": "Beyaz peynir", "image": null },
+          { "name": "Bal – kaymak", "image": null },
+          { "name": "Salatalık", "image": null },
+          { "name": "Poğaça", "image": null },
+          { "name": "Çay", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 940,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Şehriye çorbası", "image": null },
+          { "name": "Et sote", "image": null },
+          { "name": "Erişte", "image": null },
+          { "name": "Cacık", "image": null },
+          { "name": "Meyve (armut)", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-30",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 590,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Haşlanmış yumurta", "image": null },
+          { "name": "Lor", "image": null },
+          { "name": "Zeytin", "image": null },
+          { "name": "Reçel", "image": null },
+          { "name": "Ekmek", "image": null },
+          { "name": "Süt", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 900,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Mercimek çorbası", "image": null },
+          { "name": "Mantı", "image": null },
+          { "name": "Yoğurt", "image": null },
+          { "name": "Salata", "image": null },
+          { "name": "Kek", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-31",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 670,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Sucuklu yumurta", "image": null },
+          { "name": "Kaşar", "image": null },
+          { "name": "Domates", "image": null },
+          { "name": "Bal", "image": null },
+          { "name": "Simit", "image": null },
+          { "name": "Çay", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 930,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Yayla çorbası", "image": null },
+          { "name": "Tavuk şinitzel", "image": null },
+          { "name": "Patates kızartması", "image": null },
+          { "name": "Mevsim salata", "image": null },
+          { "name": "Ayran", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-09-01",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 615,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Omlet", "image": null },
+          { "name": "Beyaz peynir", "image": null },
+          { "name": "Zeytin", "image": null },
+          { "name": "Tahin-pekmez", "image": null },
+          { "name": "Poğaça", "image": null },
+          { "name": "Çay", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 860,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Ezogelin çorba", "image": null },
+          { "name": "Nohut yemeği", "image": null },
+          { "name": "Bulgur pilavı", "image": null },
+          { "name": "Turşu", "image": null },
+          { "name": "Komposto", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 625,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Haşlanmış yumurta", "image": null },
+          { "name": "Kaşar", "image": null },
+          { "name": "Siyah zeytin", "image": null },
+          { "name": "Reçel", "image": null },
+          { "name": "Ekmek", "image": null },
+          { "name": "Süt", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 950,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Tarhana çorbası", "image": null },
+          { "name": "Izgara tavuk", "image": null },
+          { "name": "Pirinç pilavı", "image": null },
+          { "name": "Cacık", "image": null },
+          { "name": "Sütlaç", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 640,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Menemen", "image": null },
+          { "name": "Lor peynir", "image": null },
+          { "name": "Domates / salatalık", "image": null },
+          { "name": "Bal", "image": null },
+          { "name": "Simit", "image": null },
+          { "name": "Çay", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 885,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Domates çorbası", "image": null },
+          { "name": "Karnıyarık", "image": null },
+          { "name": "Yoğurt", "image": null },
+          { "name": "Salata", "image": null },
+          { "name": "Meyve", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-09-04",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 605,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Sahanda yumurta", "image": null },
+          { "name": "Beyaz peynir", "image": null },
+          { "name": "Zeytin", "image": null },
+          { "name": "Tereyağı", "image": null },
+          { "name": "Poğaça", "image": null },
+          { "name": "Çay", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 915,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Şehriye çorbası", "image": null },
+          { "name": "Etli nohut", "image": null },
+          { "name": "Pirinç pilavı", "image": null },
+          { "name": "Turşu", "image": null },
+          { "name": "Hoşaf", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 650,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Sucuklu yumurta", "image": null },
+          { "name": "Kaşar", "image": null },
+          { "name": "Bal – kaymak", "image": null },
+          { "name": "Salatalık", "image": null },
+          { "name": "Simit", "image": null },
+          { "name": "Çay", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 890,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Mercimek çorbası", "image": null },
+          { "name": "Tavuk sote", "image": null },
+          { "name": "Bulgur pilavı", "image": null },
+          { "name": "Mevsim salata", "image": null },
+          { "name": "Ayran", "image": null }
+        ]
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 595,
+        "image": "assets/img/breakfast.svg",
+        "items": [
+          { "name": "Omlet", "image": null },
+          { "name": "Beyaz peynir", "image": null },
+          { "name": "Zeytin", "image": null },
+          { "name": "Reçel", "image": null },
+          { "name": "Ekmek", "image": null },
+          { "name": "Süt", "image": null }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 870,
+        "image": "assets/img/dinner.svg",
+        "items": [
+          { "name": "Yayla çorbası", "image": null },
+          { "name": "Kıymalı makarna", "image": null },
+          { "name": "Cacık", "image": null },
+          { "name": "Salata", "image": null },
+          { "name": "Kek", "image": null }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Kahvalt1 görseli">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B365D"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="24" fill="url(#g)"/>
+  <circle cx="470" cy="90" r="70" fill="#10B981" opacity="0.25"/>
+  <circle cx="120" cy="280" r="90" fill="#34D399" opacity="0.18"/>
+  <text x="48" y="188" fill="#ECFDF5" font-family="Montserrat, Arial, sans-serif" font-size="42" font-weight="700">Kahvalt1</text>
+  <text x="48" y="228" fill="#A7F3D0" font-family="Lato, Arial, sans-serif" font-size="18">Görsel sonra eklenecek</text>
+</svg>

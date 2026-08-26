@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yurt Yemek Listesi · Kampüs Asistan</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-toolbar">
+      <div class="container header-toolbar-inner">
+        <span><i class="fa-solid fa-location-dot"></i> Bolu · Gölköy Kampüs</span>
+        <span><i class="fa-solid fa-envelope"></i> asistan@kampus.local</span>
+      </div>
+    </div>
+    <div class="container header-bar">
+      <a class="logo" href="index.html">
+        <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+        Kampüs<span>Asistan</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menü" aria-expanded="false"><span></span></button>
+      <nav class="site-nav">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="yemek.html" class="active">Yemek Listesi</a>
+        <a href="puan.html">Puan Hesaplama</a>
+        <a href="otobus.html">Otobüsüm Nerede</a>
+        <a href="ders-programi.html">Ders Programı</a>
+        <a class="nav-cta" href="yemek.html">Bugünün menüsü</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="kicker">Gölköy yemekhane</p>
+      <h1>Yurt <span>yemek listesi</span></h1>
+      <p class="breadcrumb"><a href="index.html">Ana sayfa</a> / Yemek listesi</p>
+      <p>Tarih seç; kahvaltı solda, akşam yemeği sağda. Mobilde kartlar alt alta iner. Menü `data/meals.json` dosyasından okunur.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="calendar-wrap" data-calendar>
+        <div class="calendar-head">
+          <button class="icon-btn" type="button" data-cal-prev aria-label="Önceki ay"><i class="fa-solid fa-chevron-left"></i></button>
+          <h3 data-cal-label>Takvim</h3>
+          <button class="icon-btn" type="button" data-cal-next aria-label="Sonraki ay"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="calendar-weekdays">
+          <span>Pzt</span><span>Sal</span><span>Çar</span><span>Per</span><span>Cum</span><span>Cmt</span><span>Paz</span>
+        </div>
+        <div class="calendar-grid" data-cal-grid></div>
+        <p class="selected-date">Seçilen gün: <span data-selected-date>—</span></p>
+      </div>
+
+      <div data-menu style="margin-top:24px">
+        <div class="soft-card empty-state"><p>Menü yükleniyor…</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Kampüs Asistan</h4>
+          <p>Yurt ve kampüs hayatını sadeleştirmek için lacivert–yeşil temalı öğrenci arayüzü.</p>
+        </div>
+        <div>
+          <h4>Sayfalar</h4>
+          <p><a href="yemek.html">Yemek listesi</a></p>
+          <p><a href="puan.html">Puan hesaplama</a></p>
+          <p><a href="otobus.html">Otobüsüm nerede</a></p>
+          <p><a href="ders-programi.html">Ders programı</a></p>
+        </div>
+        <div>
+          <h4>Kampüs</h4>
+          <p>Bolu · Gölköy</p>
+          <p>Bilgisayar Mühendisliği</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Kampüs Asistan</p>
+        <p>Örnek / mock veri ile çalışır</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/meals.js"></script>
+</body>
+</html>
