@@ -2,190 +2,1931 @@
   "meta": {
     "faculty": "Mühendislik Fakültesi",
     "department": "Bilgisayar Mühendisliği",
-    "note": "Ders içerikleri ve program sonradan güncellenecek. weekStart ISO tarihidir (hafta 1 pazartesi)."
+    "academicYear": "2025–2026",
+    "source": "2025_26 Güz Lisans ve 2025_26 Bahar Ders Lisans v5 PDF",
+    "note": "Ders saatleri ve hocalar 2025–2026 lisans PDF’lerinden. 14 haftalık konular ders adına göre doldurulmuş örnek müfredattır; resmi izlence gelince güncellenir."
   },
+  "years": [
+    {
+      "id": 1,
+      "label": "1. Sınıf"
+    },
+    {
+      "id": 2,
+      "label": "2. Sınıf"
+    },
+    {
+      "id": 3,
+      "label": "3. Sınıf"
+    },
+    {
+      "id": 4,
+      "label": "4. Sınıf"
+    }
+  ],
   "semesters": [
     {
       "id": "fall",
       "label": "Güz Dönemi",
-      "year": "2026–2027",
-      "weekStart": "2026-08-24",
+      "year": "2025–2026",
+      "weekStart": "2025-09-22",
       "weekCount": 14,
-      "timeSlots": ["08:30–09:20", "09:30–10:20", "10:30–11:20", "11:30–12:20", "13:30–14:20", "14:30–15:20", "15:30–16:20"],
-      "days": ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"],
+      "timeSlots": [
+        "08:30–09:15",
+        "09:30–10:15",
+        "10:30–11:15",
+        "11:30–12:15",
+        "12:30–13:15",
+        "13:30–14:15",
+        "14:30–15:15",
+        "15:30–16:15",
+        "16:30–17:15",
+        "17:30–18:15"
+      ],
+      "days": [
+        "Pazartesi",
+        "Salı",
+        "Çarşamba",
+        "Perşembe",
+        "Cuma"
+      ],
       "courses": [
         {
-          "id": "mat101",
-          "code": "MAT 101",
-          "name": "Matematik I",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "A-201",
+          "id": "g-y3-algoritma-analizi-grup-a",
+          "year": 3,
+          "code": "Algoritma Analizi (Grup A)",
+          "name": "Algoritma Analizi (Grup A)",
+          "instructor": "M. Dinçer Erbaş",
+          "room": "327 / B.L.",
           "color": "#1B365D",
-          "slots": [{ "day": 0, "slot": 0 }, { "day": 0, "slot": 1 }, { "day": 2, "slot": 2 }],
+          "slots": [
+            {
+              "day": 0,
+              "slot": 0
+            },
+            {
+              "day": 0,
+              "slot": 1
+            },
+            {
+              "day": 0,
+              "slot": 2
+            },
+            {
+              "day": 0,
+              "slot": 3
+            },
+            {
+              "day": 0,
+              "slot": 4
+            }
+          ],
           "syllabus": [
-            "Limit ve süreklilik",
-            "Türev tanımı ve kuralları",
-            "Türevin uygulamaları",
-            "Ekstremum problemleri",
-            "Belirsiz integral",
-            "Belirli integral ve alan",
+            "Algoritma, doğruluk ve asemptotik gösterim",
+            "Yinelemeler: master teoremi",
+            "Böl ve yönet: birleştirerek sıralama, ikili arama",
+            "Hızlı sıralama ve rastgele algoritmalar",
+            "Yığışım (heap) ve öncelik kuyruğu",
+            "Hashing analizi",
             "Ara sınav haftası",
-            "İntegral teknikleri",
-            "Diziler",
-            "Seriler",
-            "Kuvvet serileri",
-            "Taylor açılımları",
-            "Uygulama ve problem çözümü",
-            "Final hazırlık ve tekrar"
-          ]
-        },
-        {
-          "id": "fiz101",
-          "code": "FIZ 101",
-          "name": "Fizik I",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "B-105",
-          "color": "#234574",
-          "slots": [{ "day": 1, "slot": 0 }, { "day": 1, "slot": 1 }, { "day": 3, "slot": 4 }],
-          "syllabus": [
-            "Ölçme ve vektörler",
-            "Bir boyutta hareket",
-            "İki boyutta hareket",
-            "Newton yasaları",
-            "Sürtünme ve uygulamalar",
-            "İş ve enerji",
-            "Ara sınav haftası",
-            "Momentum ve çarpışmalar",
-            "Dönme hareketi",
-            "Açısal momentum",
-            "Titreşim hareketi",
-            "Dalga mekaniği",
-            "Laboratuvar özeti",
+            "Dinamik programlama",
+            "Açgözlü algoritmalar",
+            "Çizge algoritmaları: MST, en kısa yol",
+            "NP, P ve indirgeme fikri",
+            "Yaklaşık çözüm ve sezgisel yöntemler",
+            "Seçilmiş makale / uygulama",
             "Final hazırlık"
           ]
         },
         {
-          "id": "bil101",
-          "code": "BIL 101",
-          "name": "Bilgisayar Mühendisliğine Giriş",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "C-Lab 1",
-          "color": "#10B981",
-          "slots": [{ "day": 0, "slot": 4 }, { "day": 0, "slot": 5 }],
+          "id": "g-y3-mikroislemciler-grup-b",
+          "year": 3,
+          "code": "Mikroişlemciler (Grup B)",
+          "name": "Mikroişlemciler (Grup B)",
+          "instructor": "Ali Çalım",
+          "room": "B.L. / D.L.",
+          "color": "#047857",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 0
+            },
+            {
+              "day": 0,
+              "slot": 1
+            },
+            {
+              "day": 0,
+              "slot": 2
+            },
+            {
+              "day": 0,
+              "slot": 3
+            },
+            {
+              "day": 0,
+              "slot": 4
+            }
+          ],
           "syllabus": [
-            "Bölüm tanıtımı ve akademik takvim",
-            "Bilgisayarın tarihçesi ve mimari",
-            "Sayı sistemleri",
-            "Algoritma düşüncesi",
-            "Akış diyagramları",
+            "Mikroişlemci vs mikrodenetleyici, mimari bloklar",
+            "Komut kümesi ve adresleme kipleri",
+            "Assembly'ye giriş ve makine döngüsü",
+            "Bellek haritası, yığın ve kesmeler",
+            "G/Ç, GPIO ve zamanlayıcılar",
+            "ADC, PWM ve haberleşme (UART, SPI, I2C)",
+            "Ara sınav haftası",
+            "Kesme önceliği ve gerçek zaman",
+            "C ile gömülü programlama",
+            "Donanım-yazılım eşzamanlama",
+            "Laboratuvar: kart üzerinde uygulama",
+            "Küçük gömülü proje",
+            "Proje gösterimi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y4-bitirme-projesi-i-grup-a",
+          "year": 4,
+          "code": "Bitirme Projesi I (Grup A)",
+          "name": "Bitirme Projesi I (Grup A)",
+          "instructor": "Ferhat Demiray / Önder Eyecioğlu / M. Alper AKKAŞ",
+          "room": "—",
+          "color": "#0F766E",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 0
+            },
+            {
+              "day": 0,
+              "slot": 1
+            },
+            {
+              "day": 0,
+              "slot": 2
+            },
+            {
+              "day": 0,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Konu seçimi, danışman ve kapsam",
+            "Literatür ve benzer ürün taraması",
+            "Gereksinim ve başarı ölçütleri",
+            "Mimari taslak ve teknoloji seçimi",
+            "Risk, zaman planı ve WBS",
+            "Ara rapor I: problem tanımı",
+            "Ara değerlendirme",
+            "İlk prototip / kanıt",
+            "Veri, deney veya arayüz ilerlemesi",
+            "Ara rapor II",
+            "Danışman sunumu ve geri bildirim",
+            "Belgelendirme (README, diyagram)",
+            "Dönem sonu jüriye hazırlık",
+            "Bitirme I teslimi"
+          ]
+        },
+        {
+          "id": "g-y2-ayrik-matematik",
+          "year": 2,
+          "code": "Ayrık Matematik",
+          "name": "Ayrık Matematik",
+          "instructor": "Hünkar Kayhan",
+          "room": "227",
+          "color": "#234574",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 1
+            },
+            {
+              "day": 0,
+              "slot": 2
+            },
+            {
+              "day": 0,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Önermeler, mantık bağlaçları ve doğruluk tabloları",
+            "Niceleyiciler, ispat yöntemleri ve çelişki",
+            "Kümeler, kuvvet kümesi ve Venn",
+            "Bağıntılar: denklik ve sıra",
+            "Fonksiyonlar, birebir ve örten",
+            "Matematiksel indüksiyon ve özyineleme",
+            "Ara sınav haftası",
+            "Sayma: çarpım kuralı, permütasyon, kombinasyon",
+            "Güvercin yuvası ve kapsama-dışlama",
+            "Çizge teorisi: yollar, çevrimler, Euler/Hamilton",
+            "Ağaçlar ve yayılan ağaçlar",
+            "Boolean cebir ve mantık devrelerine bağ",
+            "Sonlu otomatlara bakış",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y4-ileri-veri-tabani-yon-sis-sec-vii",
+          "year": 4,
+          "code": "İleri Veri Tabanı Yön. Sis. (Seç VII)",
+          "name": "İleri Veri Tabanı Yön. Sis. (Seç VII)",
+          "instructor": "Abdülkadir Özdemir",
+          "room": "326",
+          "color": "#C2410C",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 1
+            },
+            {
+              "day": 0,
+              "slot": 2
+            },
+            {
+              "day": 0,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "İlişkisel model tekrarı ve ileri SQL",
+            "Saklı yordam, tetikleyici ve görünümler",
+            "İndeks türleri ve sorgu planı",
+            "Bölümleme ve büyük veri tabloları",
+            "Eşzamanlılık kontrolü ve yalıtım seviyeleri",
+            "Dağıtık veritabanları ve CAP",
+            "Ara sınav haftası",
+            "NoSQL: belge, anahtar-değer, sütun",
+            "Yineleme, sharding ve tutarlılık",
+            "Veri ambarı ve OLAP bakışı",
+            "Güvenlik: rol, denetim, şifreleme",
+            "Laboratuvar uygulaması",
+            "Tasarım ödevi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y2-kablosuz-algilayici-aglar-secmeli-iii",
+          "year": 2,
+          "code": "Kablosuz Algılayıcı Ağlar (Seçmeli III)",
+          "name": "Kablosuz Algılayıcı Ağlar (Seçmeli III)",
+          "instructor": "M. Alper AKKAŞ",
+          "room": "326",
+          "color": "#2F4984",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 4
+            },
+            {
+              "day": 0,
+              "slot": 5
+            },
+            {
+              "day": 0,
+              "slot": 6
+            }
+          ],
+          "syllabus": [
+            "WSN mimarisi, düğüm ve batarya kısıtı",
+            "Algılayıcı türleri ve ADC",
+            "MAC protokolleri (S-MAC, duty cycle)",
+            "Yönlendirme: LEACH, Directed Diffusion",
+            "Zaman senkronizasyonu ve konumlama",
+            "Güvenlik ve enerji saldırıları",
+            "Ara sınav haftası",
+            "IEEE 802.15.4 ve ZigBee",
+            "LoRa / LoRaWAN",
+            "Veri birleştirme (aggregation)",
+            "Simülasyon araçları",
+            "Küçük WSN senaryosu",
+            "Proje sunumu",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y1-matematik-1",
+          "year": 1,
+          "code": "Matematik-1",
+          "name": "Matematik-1",
+          "instructor": "Hünkar Kayhan",
+          "room": "227",
+          "color": "#059669",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 5
+            },
+            {
+              "day": 0,
+              "slot": 6
+            },
+            {
+              "day": 0,
+              "slot": 7
+            },
+            {
+              "day": 0,
+              "slot": 8
+            },
+            {
+              "day": 0,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Sayı kümeleri, mutlak değer ve eşitsizlikler",
+            "Fonksiyonlar, limit ve süreklilik",
+            "Türev tanımı ve türev alma kuralları",
+            "Zincir kuralı, kapalı fonksiyonlar ve yüksek mertebeden türev",
+            "Türevin uygulamaları: ekstremum, teğet, ortalama değer teoremi",
+            "Grafik çizimi, L'Hôpital kuralı ve belirsizlikler",
+            "Ara sınav haftası",
+            "Belirsiz integral ve temel integral teknikleri",
+            "Değişken değiştirme ve kısmi integrasyon",
+            "Belirli integral, Riemann toplamı ve alan hesabı",
+            "Dönel cisimlerin hacmi ve yay uzunluğu",
+            "Diziler ve yakınsaklık",
+            "Seriler, geometrik seri ve integral testi",
+            "Final hazırlık ve problem çözümü"
+          ]
+        },
+        {
+          "id": "g-y3-algoritma-analizi-grup-b",
+          "year": 3,
+          "code": "Algoritma Analizi (Grup B)",
+          "name": "Algoritma Analizi (Grup B)",
+          "instructor": "M. Dinçer Erbaş",
+          "room": "327 / B.L.",
+          "color": "#9A3412",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 5
+            },
+            {
+              "day": 0,
+              "slot": 6
+            },
+            {
+              "day": 0,
+              "slot": 7
+            },
+            {
+              "day": 0,
+              "slot": 8
+            },
+            {
+              "day": 0,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Algoritma, doğruluk ve asemptotik gösterim",
+            "Yinelemeler: master teoremi",
+            "Böl ve yönet: birleştirerek sıralama, ikili arama",
+            "Hızlı sıralama ve rastgele algoritmalar",
+            "Yığışım (heap) ve öncelik kuyruğu",
+            "Hashing analizi",
+            "Ara sınav haftası",
+            "Dinamik programlama",
+            "Açgözlü algoritmalar",
+            "Çizge algoritmaları: MST, en kısa yol",
+            "NP, P ve indirgeme fikri",
+            "Yaklaşık çözüm ve sezgisel yöntemler",
+            "Seçilmiş makale / uygulama",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y2-web-programlama-secmeli-iii",
+          "year": 2,
+          "code": "Web Programlama (Seçmeli III)",
+          "name": "Web Programlama (Seçmeli III)",
+          "instructor": "Önder Eyecioğlu",
+          "room": "A.L.",
+          "color": "#1E3A5F",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 7
+            },
+            {
+              "day": 0,
+              "slot": 8
+            },
+            {
+              "day": 0,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "HTTP, URL, tarayıcı ve geliştirici araçları",
+            "HTML5 semantik yapı",
+            "CSS: kutu modeli, flex ve grid",
+            "JavaScript temelleri ve DOM",
+            "Olaylar, fetch ve JSON",
+            "Formlar, doğrulama ve erişilebilirlik",
+            "Ara sınav haftası",
+            "Sunucu tarafı: REST API fikri",
+            "Oturum, çerez ve JWT'ye bakış",
+            "Veritabanı ile web uygulaması",
+            "Güvenlik: XSS, CSRF, SQL injection",
+            "Dağıtım ve ortam değişkenleri",
+            "Mini tam yığın proje",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y4-sensor-aglari-sec-vii",
+          "year": 4,
+          "code": "Sensör Ağları (Seç VII)",
+          "name": "Sensör Ağları (Seç VII)",
+          "instructor": "M. Alper Akkaş",
+          "room": "326",
+          "color": "#BE123C",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 7
+            },
+            {
+              "day": 0,
+              "slot": 8
+            },
+            {
+              "day": 0,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Algılayıcı düğüm donanımı ve enerji",
+            "Fiziksel katman ve kablosuz kanal",
+            "MAC ve uyku çizelgesi",
+            "Yönlendirme ve veri toplama ağaçları",
+            "Zaman senkronizasyonu",
+            "Güvenlik ve sahte düğüm",
+            "Ara sınav haftası",
+            "Kalibrasyon ve hata modelleri",
+            "Kenar hesaplama (edge) ile WSN",
+            "Uygulama: tarım, yapı sağlığı, kampüs",
+            "Simülasyon deneyi",
+            "Proje geliştirme",
+            "Sunum",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y1-fizik-1",
+          "year": 1,
+          "code": "Fizik-1",
+          "name": "Fizik-1",
+          "instructor": "Ferhat Demiray",
+          "room": "327",
+          "color": "#0E7490",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 0
+            },
+            {
+              "day": 1,
+              "slot": 1
+            },
+            {
+              "day": 1,
+              "slot": 2
+            },
+            {
+              "day": 1,
+              "slot": 3
+            },
+            {
+              "day": 1,
+              "slot": 4
+            }
+          ],
+          "syllabus": [
+            "Ölçme, birimler ve vektörler",
+            "Bir boyutta hareket: hız ve ivme",
+            "İki boyutta hareket ve yörünge",
+            "Newton'un hareket yasaları",
+            "Sürtünme, eğik düzlem ve bağlı cisimler",
+            "Dairesel hareket ve evrensel çekim",
+            "Ara sınav haftası",
+            "İş, kinetik enerji ve iş-enerji teoremi",
+            "Potansiyel enerji ve mekanik enerji korunumu",
+            "Momentum, impuls ve çarpışmalar",
+            "Kütle merkezi ve dönme kinematiği",
+            "Tork, eylemsizlik momenti ve yuvarlanma",
+            "Basit harmonik hareket",
+            "Laboratuvar özeti ve final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y2-nesne-tabanli-programlama-grup-a",
+          "year": 2,
+          "code": "Nesne Tabanlı Programlama (Grup A)",
+          "name": "Nesne Tabanlı Programlama (Grup A)",
+          "instructor": "Ümit Şentürk",
+          "room": "B.L.",
+          "color": "#365314",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 0
+            },
+            {
+              "day": 1,
+              "slot": 1
+            },
+            {
+              "day": 1,
+              "slot": 2
+            },
+            {
+              "day": 1,
+              "slot": 3
+            },
+            {
+              "day": 1,
+              "slot": 4
+            }
+          ],
+          "syllabus": [
+            "Nesne kavramı, sınıf ve UML'e giriş",
+            "Yapıcılar, this ve erişim belirleyiciler",
+            "Kapsülleme ve bilgi gizleme",
+            "Kalıtım ve is-a ilişkisi",
+            "Çok biçimlilik ve sanal metotlar",
+            "Soyut sınıflar ve arayüzler",
+            "Ara sınav haftası",
+            "İstisnalar ve hata yönetimi",
+            "Koleksiyonlar ve jenerikler",
+            "Dosya, serileştirme ve I/O",
+            "Tasarım ilkeleri: SOLID'e bakış",
+            "Küçük nesne tabanlı proje",
+            "Kod incelemesi ve refaktör",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y3-isletim-sistemleri-i-grup-a",
+          "year": 3,
+          "code": "İşletim Sistemleri I (Grup A)",
+          "name": "İşletim Sistemleri I (Grup A)",
+          "instructor": "Önder Eyecioğlu",
+          "room": "326",
+          "color": "#6B21A8",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 0
+            },
+            {
+              "day": 1,
+              "slot": 1
+            },
+            {
+              "day": 1,
+              "slot": 2
+            },
+            {
+              "day": 1,
+              "slot": 3
+            },
+            {
+              "day": 1,
+              "slot": 4
+            }
+          ],
+          "syllabus": [
+            "OS rolü, çekirdek ve sistem çağrıları",
+            "Süreçler, PCB ve bağlam değiştirme",
+            "İş parçacıkları ve eşzamanlılık",
+            "CPU çizelgeleme: FCFS, SJF, Round Robin",
+            "Senkronizasyon: kilit, semafor, monitor",
+            "Kilitlenme (deadlock) ve önleme",
+            "Ara sınav haftası",
+            "Bellek yönetimi: sayfalama ve segmentasyon",
+            "Sanal bellek ve sayfa değiştirme",
+            "Dosya sistemleri",
+            "G/Ç alt sistemi ve sürücüler",
+            "Linux pratikleri: süreç, izin, kabuk",
+            "Küçük çekirdek / simülasyon ödevi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y2-muhendislik-ekonomisi-secmeli-iii",
+          "year": 2,
+          "code": "Mühendislik Ekonomisi (Seçmeli III)",
+          "name": "Mühendislik Ekonomisi (Seçmeli III)",
+          "instructor": "Abdülkadir Özdemir",
+          "room": "227",
+          "color": "#1D4ED8",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 1
+            },
+            {
+              "day": 1,
+              "slot": 2
+            },
+            {
+              "day": 1,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Paranın zaman değeri ve faiz",
+            "Nakit akışı diyagramları",
+            "Bugünkü ve gelecekteki değer",
+            "Yıllık eşdeğer ve sermaye geri kazanımı",
+            "NPV, IRR ve geri ödeme süresi",
+            "Alternatiflerin karşılaştırılması",
+            "Ara sınav haftası",
+            "Enflasyon ve vergi etkisi",
+            "Amortisman",
+            "Risk, belirsizlik ve duyarlılık",
+            "Yazılım / BT yatırımı örnekleri",
+            "Vaka çalışması",
+            "Ödev sunumları",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y4-nesnelerin-interneti-sec-vii",
+          "year": 4,
+          "code": "Nesnelerin İnterneti (Seç VII)",
+          "name": "Nesnelerin İnterneti (Seç VII)",
+          "instructor": "M. Alper Akkaş",
+          "room": "U.E.",
+          "color": "#B45309",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 1
+            },
+            {
+              "day": 1,
+              "slot": 2
+            },
+            {
+              "day": 1,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "IoT yığını: cihaz, ağ, bulut, uygulama",
+            "Algılayıcı / eyleyici ve gömülü yazılım",
+            "MQTT, CoAP ve HTTP karşılaştırması",
+            "Ağ seçimi: Wi-Fi, BLE, LoRa, hücresel",
+            "Kimlik, sertifika ve cihaz güvenliği",
+            "Zaman serisi veri ve gösterge paneli",
+            "Ara sınav haftası",
+            "Bulut IoT platformlarına bakış",
+            "Kenar (edge) vs bulut işleme",
+            "Dijital ikiz fikri",
+            "Gizlilik ve fiziksel güvenlik",
+            "Laboratuvar: MCU + MQTT",
+            "Mini IoT projesi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y1-bilgisayar-muhendisligine-giris",
+          "year": 1,
+          "code": "Bilgisayar Mühendisliğine Giriş",
+          "name": "Bilgisayar Mühendisliğine Giriş",
+          "instructor": "İsmail H. Parlak",
+          "room": "U.E.",
+          "color": "#1B365D",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 5
+            },
+            {
+              "day": 1,
+              "slot": 6
+            }
+          ],
+          "syllabus": [
+            "Bölüm tanıtımı, akademik takvim ve laboratuvarlar",
+            "Bilgisayarın tarihçesi ve von Neumann mimarisi",
+            "Sayı sistemleri: ikili, onaltılık, dönüşümler",
+            "Mantık kapıları ve Boolean ifadelere bakış",
+            "Algoritma düşüncesi ve akış diyagramları",
             "Temel programlama kavramları",
             "Ara sınav haftası",
-            "Veri gösterimi",
-            "İşletim sistemlerine giriş",
-            "Ağ ve internet temelleri",
-            "Yazılım mühendisliği bakışı",
-            "Meslek etiği",
-            "Proje sunumları",
-            "Dönem tekrarı"
+            "İşletim sistemleri ve dosya sistemine giriş",
+            "Ağ, internet ve web temelleri",
+            "Veritabanı ve veri kavramı",
+            "Yazılım mühendisliğine bakış",
+            "Meslek alanları, staj ve kariyer yolları",
+            "Etik, akademik dürüstlük ve yapay zekâ farkındalığı",
+            "Dönem özeti ve sunumlar"
           ]
         },
         {
-          "id": "bil111",
-          "code": "BIL 111",
-          "name": "Programlama I",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "C-Lab 2",
-          "color": "#059669",
-          "slots": [{ "day": 2, "slot": 4 }, { "day": 2, "slot": 5 }, { "day": 4, "slot": 0 }, { "day": 4, "slot": 1 }],
+          "id": "g-y2-nesne-tabanli-programlama-grup-b",
+          "year": 2,
+          "code": "Nesne Tabanlı Programlama (Grup B)",
+          "name": "Nesne Tabanlı Programlama (Grup B)",
+          "instructor": "Ümit Şentürk",
+          "room": "B.L.",
+          "color": "#047857",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 5
+            },
+            {
+              "day": 1,
+              "slot": 6
+            },
+            {
+              "day": 1,
+              "slot": 7
+            },
+            {
+              "day": 1,
+              "slot": 8
+            },
+            {
+              "day": 1,
+              "slot": 9
+            }
+          ],
           "syllabus": [
-            "Geliştirme ortamı ve ilk program",
-            "Değişkenler ve veri tipleri",
-            "Operatörler ve ifadeler",
-            "Koşullu ifadeler",
-            "Döngüler",
-            "Diziler",
+            "Nesne kavramı, sınıf ve UML'e giriş",
+            "Yapıcılar, this ve erişim belirleyiciler",
+            "Kapsülleme ve bilgi gizleme",
+            "Kalıtım ve is-a ilişkisi",
+            "Çok biçimlilik ve sanal metotlar",
+            "Soyut sınıflar ve arayüzler",
             "Ara sınav haftası",
-            "Fonksiyonlar",
-            "Özyineleme",
-            "İşaretçilere giriş",
-            "Karakter dizileri",
-            "Dosya işlemleri",
-            "Küçük proje",
+            "İstisnalar ve hata yönetimi",
+            "Koleksiyonlar ve jenerikler",
+            "Dosya, serileştirme ve I/O",
+            "Tasarım ilkeleri: SOLID'e bakış",
+            "Küçük nesne tabanlı proje",
+            "Kod incelemesi ve refaktör",
             "Final hazırlık"
           ]
         },
         {
-          "id": "tur101",
-          "code": "TUR 101",
-          "name": "Türk Dili I",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "A-110",
-          "color": "#2F4984",
-          "slots": [{ "day": 3, "slot": 0 }],
+          "id": "g-y3-mikroislemciler-grup-a",
+          "year": 3,
+          "code": "Mikroişlemciler (Grup A)",
+          "name": "Mikroişlemciler (Grup A)",
+          "instructor": "Ali Çalım",
+          "room": "327 / D.L.",
+          "color": "#0F766E",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 5
+            },
+            {
+              "day": 1,
+              "slot": 6
+            },
+            {
+              "day": 1,
+              "slot": 7
+            },
+            {
+              "day": 1,
+              "slot": 8
+            },
+            {
+              "day": 1,
+              "slot": 9
+            }
+          ],
           "syllabus": [
-            "Dil ve kültür",
-            "Yazım kuralları",
-            "Noktalama",
-            "Anlatım bozuklukları",
-            "Paragraf yapısı",
-            "Resmî yazışma",
+            "Mikroişlemci vs mikrodenetleyici, mimari bloklar",
+            "Komut kümesi ve adresleme kipleri",
+            "Assembly'ye giriş ve makine döngüsü",
+            "Bellek haritası, yığın ve kesmeler",
+            "G/Ç, GPIO ve zamanlayıcılar",
+            "ADC, PWM ve haberleşme (UART, SPI, I2C)",
             "Ara sınav haftası",
-            "Dilekçe ve tutanak",
-            "Akademik dil",
-            "Özet çıkarma",
-            "Sözlü anlatım",
-            "Sunum teknikleri",
-            "Metin inceleme",
+            "Kesme önceliği ve gerçek zaman",
+            "C ile gömülü programlama",
+            "Donanım-yazılım eşzamanlama",
+            "Laboratuvar: kart üzerinde uygulama",
+            "Küçük gömülü proje",
+            "Proje gösterimi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y3-isletim-sistemleri-i-grup-b",
+          "year": 3,
+          "code": "İşletim Sistemleri I (Grup B)",
+          "name": "İşletim Sistemleri I (Grup B)",
+          "instructor": "Önder Eyecioğlu",
+          "room": "326",
+          "color": "#234574",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 5
+            },
+            {
+              "day": 1,
+              "slot": 6
+            },
+            {
+              "day": 1,
+              "slot": 7
+            },
+            {
+              "day": 1,
+              "slot": 8
+            },
+            {
+              "day": 1,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "OS rolü, çekirdek ve sistem çağrıları",
+            "Süreçler, PCB ve bağlam değiştirme",
+            "İş parçacıkları ve eşzamanlılık",
+            "CPU çizelgeleme: FCFS, SJF, Round Robin",
+            "Senkronizasyon: kilit, semafor, monitor",
+            "Kilitlenme (deadlock) ve önleme",
+            "Ara sınav haftası",
+            "Bellek yönetimi: sayfalama ve segmentasyon",
+            "Sanal bellek ve sayfa değiştirme",
+            "Dosya sistemleri",
+            "G/Ç alt sistemi ve sürücüler",
+            "Linux pratikleri: süreç, izin, kabuk",
+            "Küçük çekirdek / simülasyon ödevi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y4-bitirme-projesi-i-grup-b",
+          "year": 4,
+          "code": "Bitirme Projesi I (Grup B)",
+          "name": "Bitirme Projesi I (Grup B)",
+          "instructor": "Hünkar Kayhan",
+          "room": "—",
+          "color": "#C2410C",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 5
+            },
+            {
+              "day": 1,
+              "slot": 6
+            },
+            {
+              "day": 1,
+              "slot": 7
+            },
+            {
+              "day": 1,
+              "slot": 8
+            }
+          ],
+          "syllabus": [
+            "Konu seçimi, danışman ve kapsam",
+            "Literatür ve benzer ürün taraması",
+            "Gereksinim ve başarı ölçütleri",
+            "Mimari taslak ve teknoloji seçimi",
+            "Risk, zaman planı ve WBS",
+            "Ara rapor I: problem tanımı",
+            "Ara değerlendirme",
+            "İlk prototip / kanıt",
+            "Veri, deney veya arayüz ilerlemesi",
+            "Ara rapor II",
+            "Danışman sunumu ve geri bildirim",
+            "Belgelendirme (README, diyagram)",
+            "Dönem sonu jüriye hazırlık",
+            "Bitirme I teslimi"
+          ]
+        },
+        {
+          "id": "g-y1-muhendislik-etigi",
+          "year": 1,
+          "code": "Mühendislik Etiği",
+          "name": "Mühendislik Etiği",
+          "instructor": "Ali Çalım",
+          "room": "U.E.",
+          "color": "#2F4984",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 0
+            },
+            {
+              "day": 2,
+              "slot": 1
+            },
+            {
+              "day": 2,
+              "slot": 2
+            }
+          ],
+          "syllabus": [
+            "Etik, ahlak ve meslek etiği kavramları",
+            "Mühendislik yeminleri ve mesleki sorumluluk",
+            "IEEE / ACM etik kodları",
+            "Güvenlik, ürün sorumluluğu ve ihmal",
+            "Fikri mülkiyet, telif ve açık kaynak",
+            "Gizlilik, kişisel veri ve KVKK bakışı",
+            "Ara sınav haftası",
+            "Yapay zekâ etiği ve algoritmik önyargı",
+            "Çevre, sürdürülebilirlik ve yeşil bilişim",
+            "İş yerinde çıkar çatışması ve ihbar",
+            "Vaka çalışmaları: yazılım hataları ve felaketler",
+            "Ekip etiği, ayrımcılık ve kapsayıcılık",
+            "Öğrenci sunumları",
+            "Dönem değerlendirmesi"
+          ]
+        },
+        {
+          "id": "g-y4-bitirme-projesi-i-grup-c",
+          "year": 4,
+          "code": "Bitirme Projesi I (Grup C)",
+          "name": "Bitirme Projesi I (Grup C)",
+          "instructor": "M. Dinçer Erbaş / Ali Yılmaz / Ümit Şentürk / Mehmet MİLLİ",
+          "room": "—",
+          "color": "#059669",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 0
+            },
+            {
+              "day": 2,
+              "slot": 1
+            },
+            {
+              "day": 2,
+              "slot": 2
+            },
+            {
+              "day": 2,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Konu seçimi, danışman ve kapsam",
+            "Literatür ve benzer ürün taraması",
+            "Gereksinim ve başarı ölçütleri",
+            "Mimari taslak ve teknoloji seçimi",
+            "Risk, zaman planı ve WBS",
+            "Ara rapor I: problem tanımı",
+            "Ara değerlendirme",
+            "İlk prototip / kanıt",
+            "Veri, deney veya arayüz ilerlemesi",
+            "Ara rapor II",
+            "Danışman sunumu ve geri bildirim",
+            "Belgelendirme (README, diyagram)",
+            "Dönem sonu jüriye hazırlık",
+            "Bitirme I teslimi"
+          ]
+        },
+        {
+          "id": "g-y3-paralel-hesaplama-secmeli-v",
+          "year": 3,
+          "code": "Paralel Hesaplama (Seçmeli V)",
+          "name": "Paralel Hesaplama (Seçmeli V)",
+          "instructor": "Önder Eyecioğlu",
+          "room": "A.L.",
+          "color": "#9A3412",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 1
+            },
+            {
+              "day": 2,
+              "slot": 2
+            },
+            {
+              "day": 2,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Paralellik nedenleri ve Flynn taksonomisi",
+            "Paylaşılan bellek vs mesaj geçirme",
+            "OpenMP ile çoklu iş parçacığı",
+            "Yarış durumu, tutarlılık ve senkronizasyon",
+            "MPI temelleri",
+            "Veri paralelliği ve SIMD",
+            "Ara sınav haftası",
+            "GPU / CUDA'ya bakış",
+            "Yük dengeleme ve ölçeklenebilirlik",
+            "Performans modelleme ve hızlanma",
+            "Örnek algoritmaların paralelleştirilmesi",
+            "Laboratuvar uygulaması",
+            "Mini proje",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y3-dogal-dil-isleme-secmeli-v",
+          "year": 3,
+          "code": "Doğal Dil İşleme (Seçmeli V)",
+          "name": "Doğal Dil İşleme (Seçmeli V)",
+          "instructor": "İsmail H. Parlak",
+          "room": "B.L.",
+          "color": "#1E3A5F",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 1
+            },
+            {
+              "day": 2,
+              "slot": 2
+            },
+            {
+              "day": 2,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Dil, belirsizlik ve NLP uygulamaları",
+            "Metin ön işleme, token ve gövdeleme",
+            "Dil modelleri: n-gram",
+            "POS etiketleme ve gizlenen Markov",
+            "Sözdizimi: CFG ve parsing'e bakış",
+            "Anlambilim ve sözcük anlam belirsizliği",
+            "Ara sınav haftası",
+            "Vektör uzayı, TF-IDF ve benzerlik",
+            "Kelime gömüleri (word2vec bakışı)",
+            "Duygu analizi ve sınıflandırma",
+            "Diziden diziye ve dikkat mekanizmasına giriş",
+            "Etik: önyargı ve toksik dil",
+            "Küçük NLP projesi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y2-mesleki-ingilizce",
+          "year": 2,
+          "code": "Mesleki İngilizce",
+          "name": "Mesleki İngilizce",
+          "instructor": "İsmihan KÜLCÜ",
+          "room": "U.E.",
+          "color": "#BE123C",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 2
+            },
+            {
+              "day": 2,
+              "slot": 3
+            },
+            {
+              "day": 2,
+              "slot": 4
+            }
+          ],
+          "syllabus": [
+            "Teknik sözcük dağarcığı: donanım ve yazılım",
+            "Süreç ve talimat cümleleri",
+            "Makale özeti ve abstract okuma",
+            "Grafik, mimari ve API dokümanı okuma",
+            "Toplantı ve stand-up dili",
+            "Hata raporu ve issue yazımı",
+            "Ara sınav haftası",
+            "Teknik sunum yapısı",
+            "Kod yorumu ve README İngilizcesi",
+            "E-posta: istek, gecikme, teslim",
+            "Mülakat soruları (behavioral + technical)",
+            "Kısa teknik sunumlar",
+            "Akran geri bildirimi",
+            "Dönem değerlendirmesi"
+          ]
+        },
+        {
+          "id": "g-y1-kariyer-planlama",
+          "year": 1,
+          "code": "Kariyer Planlama",
+          "name": "Kariyer Planlama",
+          "instructor": "Elif ÇETİN",
+          "room": "U.E.",
+          "color": "#0E7490",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Öz farkındalık, ilgi ve yetenek envanteri",
+            "Bilgisayar mühendisliğinde kariyer haritası",
+            "CV, LinkedIn ve kişisel marka",
+            "Staj arama, iş ilanı okuma ve başvuru",
+            "Mülakat teknikleri ve teknik soru pratiği",
+            "Portfolyo, GitHub ve proje anlatımı",
+            "Ara sınav / ödev teslim haftası",
+            "Girişimcilik, freelance ve yan proje",
+            "Lisansüstü eğitim ve yurt dışı fırsatları",
+            "Networking ve mentorluk",
+            "İş hukuku, SGK ve ilk işe giriş",
+            "Konuk konuşmacı / sektör sohbeti",
+            "Kariyer planı sunumları",
+            "Dönem kapanışı"
+          ]
+        },
+        {
+          "id": "g-y4-nanoteknoloji-sec-vii",
+          "year": 4,
+          "code": "Nanoteknoloji (Seç VII)",
+          "name": "Nanoteknoloji (Seç VII)",
+          "instructor": "Ferhat Demiray",
+          "room": "B.L.",
+          "color": "#365314",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 4
+            },
+            {
+              "day": 2,
+              "slot": 5
+            },
+            {
+              "day": 2,
+              "slot": 6
+            }
+          ],
+          "syllabus": [
+            "Nano ölçek, kuantum etkileri ve yüzey/hacim",
+            "Karbon nanotüp, grafen ve 2B malzemeler",
+            "Yarıiletken nanoyapılar",
+            "Nanofabrikasyon: litografi, tortulma",
+            "Karakterizasyon: AFM, SEM, TEM bakışı",
+            "Nanoelektronik ve moleküler cihazlar",
+            "Ara sınav haftası",
+            "Nanosensörler",
+            "Enerji: nano güneş ve batarya malzemeleri",
+            "Biyonano ve ilaç taşıma (giriş)",
+            "Risk, toksisite ve düzenleme",
+            "Makale semineri",
+            "Öğrenci sunumları",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y1-a-i-i-t-i",
+          "year": 1,
+          "code": "A.İ.İ.T. I",
+          "name": "A.İ.İ.T. I",
+          "instructor": "Ahmet Ercivan",
+          "room": "U.E.",
+          "color": "#6B21A8",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 5
+            },
+            {
+              "day": 2,
+              "slot": 6
+            }
+          ],
+          "syllabus": [
+            "Kavramlar, kaynaklar ve tarih yazımı",
+            "Osmanlı yenileşme hareketleri",
+            "Trablusgarp ve Balkan savaşları",
+            "I. Dünya Savaşı ve Osmanlı'nın sonu",
+            "Mondros, işgaller ve milli direniş",
+            "Kongreler dönemi ve Misak-ı Milli",
+            "Ara sınav haftası",
+            "TBMM'nin açılışı ve bağımsızlık savaşı",
+            "Sakarya, Büyük Taarruz ve Lozan",
+            "Saltanatın kaldırılması",
+            "Cumhuriyet'in ilanı",
+            "Halifeliğin kaldırılması ve devrimler I",
+            "Tartışma ve belge incelemesi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y2-elektrik-devreleri-grup-b",
+          "year": 2,
+          "code": "Elektrik Devreleri (Grup B)",
+          "name": "Elektrik Devreleri (Grup B)",
+          "instructor": "Ali Yılmaz",
+          "room": "326 / D.L.",
+          "color": "#1D4ED8",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 5
+            },
+            {
+              "day": 2,
+              "slot": 6
+            },
+            {
+              "day": 2,
+              "slot": 7
+            },
+            {
+              "day": 2,
+              "slot": 8
+            },
+            {
+              "day": 2,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Devre elemanları, Ohm ve Kirchhoff yasaları",
+            "Seri-paralel direnç ağları",
+            "Düğüm gerilimi yöntemi",
+            "Çevre akımı yöntemi",
+            "Thevenin ve Norton eşdeğerleri",
+            "Süperpozisyon ve maksimum güç aktarımı",
+            "Ara sınav haftası",
+            "Sığaç, bobin ve geçici rejim (RC, RL)",
+            "İkinci mertebe RLC geçici analizi",
+            "Sinüsoidal kalıcı hal ve fazörler",
+            "Empedans, admittans ve güç",
+            "Frekans cevabı ve rezonans",
+            "Laboratuvar / simülasyon uygulamaları",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y3-tasarim-desenleri-secmeli-v",
+          "year": 3,
+          "code": "Tasarım Desenleri (Seçmeli V)",
+          "name": "Tasarım Desenleri (Seçmeli V)",
+          "instructor": "Önder Eyecioğlu",
+          "room": "227",
+          "color": "#B45309",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 5
+            },
+            {
+              "day": 2,
+              "slot": 6
+            },
+            {
+              "day": 2,
+              "slot": 7
+            }
+          ],
+          "syllabus": [
+            "Yazılım kalitesi, gevşek bağlılık ve SOLID",
+            "UML sınıf ve dizi diyagramları",
+            "Oluşturucu desenler: Singleton, Factory, Builder",
+            "Yapısal: Adapter, Facade, Decorator",
+            "Yapısal: Composite, Proxy",
+            "Davranışsal: Strategy, Observer, Command",
+            "Ara sınav haftası",
+            "Davranışsal: State, Template Method",
+            "MVC / katmanlı mimari",
+            "Anti-patternler",
+            "Mevcut koda desen uygulama",
+            "Kod katas ve refaktör",
+            "Proje incelemesi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y3-veri-yonetisimi-secmeli-v",
+          "year": 3,
+          "code": "Veri Yönetişimi (Seçmeli V)",
+          "name": "Veri Yönetişimi (Seçmeli V)",
+          "instructor": "Mehmet M. Huyut",
+          "room": "U.E.",
+          "color": "#1B365D",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 5
+            },
+            {
+              "day": 2,
+              "slot": 6
+            },
+            {
+              "day": 2,
+              "slot": 7
+            }
+          ],
+          "syllabus": [
+            "Veri varlığı, kalite ve sahiplik",
+            "Yönetişim çerçevesi ve roller (CDO, steward)",
+            "Meta veri, katalog ve soy ağacı",
+            "Master data ve referans veri",
+            "Gizlilik, KVKK ve açık rıza",
+            "Erişim kontrolü ve sınıflandırma",
+            "Ara sınav haftası",
+            "Veri yaşam döngüsü ve saklama politikası",
+            "Kalite metrikleri ve izleme",
+            "Etik veri kullanımı",
+            "Bulut ve üçüncü taraf riski",
+            "Vaka: sızıntı / uyumsuzluk",
+            "Politika taslağı ödevi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y1-yabanci-dil-i",
+          "year": 1,
+          "code": "Yabancı Dil - I",
+          "name": "Yabancı Dil - I",
+          "instructor": "Filiz KIRALİ",
+          "room": "U.E.",
+          "color": "#047857",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 7
+            },
+            {
+              "day": 2,
+              "slot": 8
+            }
+          ],
+          "syllabus": [
+            "Placement, tanışma ve akademik İngilizceye giriş",
+            "Present tenses ve günlük anlatım",
+            "Academic vocabulary I (üniversite ve teknoloji)",
+            "Reading strategies: skimming ve scanning",
+            "Paragraph writing: topic sentence",
+            "Listening: ders ve laboratuvar diyalogları",
+            "Ara sınav haftası",
+            "Past tenses ve deneyim anlatımı",
+            "Technical English: cihaz, süreç, talimat",
+            "E-posta ve resmî yazışma",
+            "Presentation skills",
+            "Reading circle: kısa teknik metin",
+            "Kısa sözlü sunum",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y2-programlama-dilleri-temelleri-secmeli-iii",
+          "year": 2,
+          "code": "Programlama Dilleri Temelleri (Seçmeli III)",
+          "name": "Programlama Dilleri Temelleri (Seçmeli III)",
+          "instructor": "İsmail H. Parlak",
+          "room": "B.L.",
+          "color": "#0F766E",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 7
+            },
+            {
+              "day": 2,
+              "slot": 8
+            },
+            {
+              "day": 2,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Dil sınıfları: derlenen, yorumlanan, hibrit",
+            "Sözdizimi, anlambilim ve BNF",
+            "İsimler, bağlama ve kapsam",
+            "Veri tipleri ve tip sistemleri",
+            "İfadeler, atama ve denetim yapıları",
+            "Altyordamlar, parametre aktarım modelleri",
+            "Ara sınav haftası",
+            "Nesne modeli ve çalışma zamanı",
+            "Çöp toplayıcı ve bellek yönetimi",
+            "Eşzamanlılık yapılarına bakış",
+            "Fonksiyonel programlama kavramları",
+            "Dil karşılaştırma ödevi",
+            "Sunumlar",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y4-yapay-zeka-sec-vii",
+          "year": 4,
+          "code": "Yapay Zeka (Seç VII)",
+          "name": "Yapay Zeka (Seç VII)",
+          "instructor": "M. Dinçer Erbaş",
+          "room": "327",
+          "color": "#234574",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 7
+            },
+            {
+              "day": 2,
+              "slot": 8
+            },
+            {
+              "day": 2,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Yapay zekâ tarihi, zayıf/güçlü YZ",
+            "Arama: BFS, DFS, sezgisel A*",
+            "Bilgi temsili ve çıkarım",
+            "Olasılıksal akıl yürütme ve Bayes ağları",
+            "Makine öğrenmesine giriş: denetimli öğrenme",
+            "Karar ağacı, kNN ve değerlendirme metrikleri",
+            "Ara sınav haftası",
+            "Yapay sinir ağları ve geri yayılım",
+            "Denetimsiz öğrenme: kümeleme",
+            "Pekiştirmeli öğrenmeye bakış",
+            "NLP veya görü seçilmiş uygulama",
+            "Etik, açıklanabilirlik ve sınırlar",
+            "Küçük model ödevi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y1-kimya-grup-a",
+          "year": 1,
+          "code": "Kimya (Grup A)",
+          "name": "Kimya (Grup A)",
+          "instructor": "Berrin TOPUZ",
+          "room": "227",
+          "color": "#C2410C",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 0
+            },
+            {
+              "day": 3,
+              "slot": 1
+            },
+            {
+              "day": 3,
+              "slot": 2
+            },
+            {
+              "day": 3,
+              "slot": 3
+            },
+            {
+              "day": 3,
+              "slot": 4
+            }
+          ],
+          "syllabus": [
+            "Maddenin halleri, mol kavramı ve stokiyometri",
+            "Atom modelleri ve periyodik tablo",
+            "Kimyasal bağlar: iyonik ve kovalent",
+            "Molekül geometrisi ve hibritleşme",
+            "Gazlar, sıvılar ve çözeltiler",
+            "Termokimya ve entalpi",
+            "Ara sınav haftası",
+            "Kimyasal denge ve denge sabiti",
+            "Asitler, bazlar ve pH",
+            "Elektrokimya ve redoks tepkimeleri",
+            "Reaksiyon hızı ve kataliz",
+            "Mühendislik malzemelerine kimyasal bakış",
+            "Laboratuvar güvenliği ve raporlama",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y2-elektrik-devreleri-grup-a",
+          "year": 2,
+          "code": "Elektrik Devreleri (Grup A)",
+          "name": "Elektrik Devreleri (Grup A)",
+          "instructor": "Ali Yılmaz",
+          "room": "326 / D.L.",
+          "color": "#2F4984",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 0
+            },
+            {
+              "day": 3,
+              "slot": 1
+            },
+            {
+              "day": 3,
+              "slot": 2
+            },
+            {
+              "day": 3,
+              "slot": 3
+            },
+            {
+              "day": 3,
+              "slot": 4
+            }
+          ],
+          "syllabus": [
+            "Devre elemanları, Ohm ve Kirchhoff yasaları",
+            "Seri-paralel direnç ağları",
+            "Düğüm gerilimi yöntemi",
+            "Çevre akımı yöntemi",
+            "Thevenin ve Norton eşdeğerleri",
+            "Süperpozisyon ve maksimum güç aktarımı",
+            "Ara sınav haftası",
+            "Sığaç, bobin ve geçici rejim (RC, RL)",
+            "İkinci mertebe RLC geçici analizi",
+            "Sinüsoidal kalıcı hal ve fazörler",
+            "Empedans, admittans ve güç",
+            "Frekans cevabı ve rezonans",
+            "Laboratuvar / simülasyon uygulamaları",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y3-bilgisayar-mimarisi-i-grup-a",
+          "year": 3,
+          "code": "Bilgisayar Mimarisi I (Grup A)",
+          "name": "Bilgisayar Mimarisi I (Grup A)",
+          "instructor": "Ümit Şentürk",
+          "room": "327",
+          "color": "#059669",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 1
+            },
+            {
+              "day": 3,
+              "slot": 2
+            },
+            {
+              "day": 3,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Performans ölçütleri ve Amdahl yasası",
+            "Komut kümesi mimarisi (ISA)",
+            "Tek çevrimli işlemci veri yolu",
+            "Çok çevrimli tasarım",
+            "Boru hattı (pipeline) ve hazard'lar",
+            "Dallanma öngörüsü",
+            "Ara sınav haftası",
+            "Bellek hiyerarşisi ve önbellek",
+            "Önbellek eşleme ve kaçırma cezası",
+            "Sanal bellek donanımı (TLB)",
+            "G/Ç ve kesmeler",
+            "Çok çekirdekli bakış",
+            "Tasarım ödevi / simülasyon",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y1-turk-dili-i",
+          "year": 1,
+          "code": "Türk Dili - I",
+          "name": "Türk Dili - I",
+          "instructor": "Cenk Açıkgöz",
+          "room": "U.E.",
+          "color": "#9A3412",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 5
+            },
+            {
+              "day": 3,
+              "slot": 6
+            }
+          ],
+          "syllabus": [
+            "Dil, kültür ve Türkçenin dünya dilleri arasındaki yeri",
+            "Ses bilgisi ve yazım kuralları",
+            "Noktalama işaretleri",
+            "Sözcük türleri ve yapı bilgisi",
+            "Cümle bilgisi ve anlatım bozuklukları",
+            "Paragraf yapısı ve tutarlılık",
+            "Ara sınav haftası",
+            "Resmî yazışma: dilekçe, tutanak, rapor",
+            "Akademik dil ve özet çıkarma",
+            "Sözlü anlatım ve sunum teknikleri",
+            "Metin türleri ve okuma stratejileri",
+            "Anlatım biçimleri",
+            "Uygulamalı yazma atölyesi",
             "Dönem sonu değerlendirme"
           ]
         },
         {
-          "id": "ata101",
-          "code": "ATA 101",
-          "name": "Atatürk İlkeleri ve İnkılap Tarihi I",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "A-112",
-          "color": "#0F766E",
-          "slots": [{ "day": 3, "slot": 1 }],
+          "id": "g-y2-diferansiyel-denklemler",
+          "year": 2,
+          "code": "Diferansiyel Denklemler",
+          "name": "Diferansiyel Denklemler",
+          "instructor": "Hünkar Kayhan",
+          "room": "326",
+          "color": "#1E3A5F",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 5
+            },
+            {
+              "day": 3,
+              "slot": 6
+            },
+            {
+              "day": 3,
+              "slot": 7
+            },
+            {
+              "day": 3,
+              "slot": 8
+            }
+          ],
           "syllabus": [
-            "Kavramlar ve kaynaklar",
-            "Osmanlı yenileşme hareketleri",
-            "Trablusgarp ve Balkan savaşları",
-            "I. Dünya Savaşı",
-            "Mondros ve işgaller",
-            "Milli Mücadele’nin başlaması",
+            "Diferansiyel denklem sınıfları ve çözüm kavramı",
+            "Ayrılabilir ve homojen denklemler",
+            "Birinci mertebe lineer denklemler ve integrasyon çarpanı",
+            "Tam diferansiyeller ve uygulamalar (nüfus, soğuma)",
+            "İkinci mertebe sabit katsayılı denklemler",
+            "Karakteristik denklem: reel, karmaşık, katlı kök",
             "Ara sınav haftası",
-            "Kongreler dönemi",
-            "TBMM’nin açılışı",
-            "Cepheler",
-            "Lozan’a giden yol",
-            "Cumhuriyet’in ilanı",
-            "Tartışma ve değerlendirme",
+            "Belirsiz katsayılar ve parametrelerin değişimi",
+            "Laplace dönüşümü",
+            "Laplace ile başlangıç değer problemleri",
+            "Diferansiyel denklem sistemleri",
+            "Seri çözümlerine bakış",
+            "Mühendislik uygulamaları",
             "Final hazırlık"
           ]
         },
         {
-          "id": "ing101",
-          "code": "ING 101",
-          "name": "İngilizce I",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "D-204",
-          "color": "#047857",
-          "slots": [{ "day": 1, "slot": 4 }, { "day": 1, "slot": 5 }],
+          "id": "g-y3-bilgisayar-mimarisi-i-grup-b",
+          "year": 3,
+          "code": "Bilgisayar Mimarisi I (Grup B)",
+          "name": "Bilgisayar Mimarisi I (Grup B)",
+          "instructor": "Ümit Şentürk",
+          "room": "327",
+          "color": "#BE123C",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 5
+            },
+            {
+              "day": 3,
+              "slot": 6
+            },
+            {
+              "day": 3,
+              "slot": 7
+            }
+          ],
           "syllabus": [
-            "Placement ve tanışma",
-            "Present tenses",
-            "Academic vocabulary I",
-            "Reading strategies",
-            "Paragraph writing",
-            "Listening practice",
+            "Performans ölçütleri ve Amdahl yasası",
+            "Komut kümesi mimarisi (ISA)",
+            "Tek çevrimli işlemci veri yolu",
+            "Çok çevrimli tasarım",
+            "Boru hattı (pipeline) ve hazard'lar",
+            "Dallanma öngörüsü",
             "Ara sınav haftası",
-            "Past tenses",
-            "Technical English",
-            "E-posta yazımı",
-            "Presentation skills",
-            "Reading circle",
-            "Proje sunumu",
+            "Bellek hiyerarşisi ve önbellek",
+            "Önbellek eşleme ve kaçırma cezası",
+            "Sanal bellek donanımı (TLB)",
+            "G/Ç ve kesmeler",
+            "Çok çekirdekli bakış",
+            "Tasarım ödevi / simülasyon",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y4-veri-madenciligi-sec-vii",
+          "year": 4,
+          "code": "Veri Madenciliği (Seç VII)",
+          "name": "Veri Madenciliği (Seç VII)",
+          "instructor": "Ali Yılmaz",
+          "room": "B.L.",
+          "color": "#0E7490",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 6
+            },
+            {
+              "day": 3,
+              "slot": 7
+            },
+            {
+              "day": 3,
+              "slot": 8
+            }
+          ],
+          "syllabus": [
+            "CRISP-DM, veri anlama ve ön işleme",
+            "Özellik mühendisliği ve ölçekleme",
+            "Sınıflandırma: lojistik, ağaç, orman",
+            "Dengesiz veri ve çapraz doğrulama",
+            "Kümeleme: k-means, hiyerarşik",
+            "Birliktelik kuralları (Apriori)",
+            "Ara sınav haftası",
+            "Aykırı değer ve anomali",
+            "Boyut indirgeme: PCA",
+            "Metin madenciliğine bakış",
+            "Görselleştirme ve yorum",
+            "Etik ve önyargı",
+            "Mini madencilik projesi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y1-kimya-grup-b",
+          "year": 1,
+          "code": "Kimya (Grup B)",
+          "name": "Kimya (Grup B)",
+          "instructor": "Berrin TOPUZ",
+          "room": "327",
+          "color": "#365314",
+          "slots": [
+            {
+              "day": 4,
+              "slot": 0
+            },
+            {
+              "day": 4,
+              "slot": 1
+            },
+            {
+              "day": 4,
+              "slot": 2
+            },
+            {
+              "day": 4,
+              "slot": 3
+            },
+            {
+              "day": 4,
+              "slot": 4
+            }
+          ],
+          "syllabus": [
+            "Maddenin halleri, mol kavramı ve stokiyometri",
+            "Atom modelleri ve periyodik tablo",
+            "Kimyasal bağlar: iyonik ve kovalent",
+            "Molekül geometrisi ve hibritleşme",
+            "Gazlar, sıvılar ve çözeltiler",
+            "Termokimya ve entalpi",
+            "Ara sınav haftası",
+            "Kimyasal denge ve denge sabiti",
+            "Asitler, bazlar ve pH",
+            "Elektrokimya ve redoks tepkimeleri",
+            "Reaksiyon hızı ve kataliz",
+            "Mühendislik malzemelerine kimyasal bakış",
+            "Laboratuvar güvenliği ve raporlama",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y2-veri-yapilari-grup-a",
+          "year": 2,
+          "code": "Veri Yapıları (Grup A)",
+          "name": "Veri Yapıları (Grup A)",
+          "instructor": "Mehmet MİLLİ",
+          "room": "B.L.",
+          "color": "#6B21A8",
+          "slots": [
+            {
+              "day": 4,
+              "slot": 0
+            },
+            {
+              "day": 4,
+              "slot": 1
+            },
+            {
+              "day": 4,
+              "slot": 2
+            },
+            {
+              "day": 4,
+              "slot": 3
+            },
+            {
+              "day": 4,
+              "slot": 4
+            }
+          ],
+          "syllabus": [
+            "Karmaşıklık: Big-O, en iyi/ortalama/en kötü",
+            "Diziler, bağlı listeler ve karşılaştırması",
+            "Yığın (stack) ve uygulamaları",
+            "Kuyruk, öncelik kuyruğu ve deque",
+            "Ağaçlar, ikili ağaç ve dolaşma",
+            "BST, AVL ve dengeli ağaçlara bakış",
+            "Ara sınav haftası",
+            "Heap ve heap sıralama",
+            "Hash tabloları ve çarpışma çözümleri",
+            "Çizgeler: BFS, DFS",
+            "En kısa yol: Dijkstra'ya bakış",
+            "Sıralama algoritmaları karşılaştırması",
+            "Uygulama ödevi ve analiz",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "g-y4-bitirme-projesi-i-grup-d",
+          "year": 4,
+          "code": "Bitirme Projesi I (Grup D)",
+          "name": "Bitirme Projesi I (Grup D)",
+          "instructor": "İsmail H. Parlak / Ali Çalım",
+          "room": "—",
+          "color": "#1D4ED8",
+          "slots": [
+            {
+              "day": 4,
+              "slot": 0
+            },
+            {
+              "day": 4,
+              "slot": 1
+            },
+            {
+              "day": 4,
+              "slot": 2
+            },
+            {
+              "day": 4,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Konu seçimi, danışman ve kapsam",
+            "Literatür ve benzer ürün taraması",
+            "Gereksinim ve başarı ölçütleri",
+            "Mimari taslak ve teknoloji seçimi",
+            "Risk, zaman planı ve WBS",
+            "Ara rapor I: problem tanımı",
+            "Ara değerlendirme",
+            "İlk prototip / kanıt",
+            "Veri, deney veya arayüz ilerlemesi",
+            "Ara rapor II",
+            "Danışman sunumu ve geri bildirim",
+            "Belgelendirme (README, diyagram)",
+            "Dönem sonu jüriye hazırlık",
+            "Bitirme I teslimi"
+          ]
+        },
+        {
+          "id": "g-y2-veri-yapilari-grup-b",
+          "year": 2,
+          "code": "Veri Yapıları (Grup B)",
+          "name": "Veri Yapıları (Grup B)",
+          "instructor": "Mehmet MİLLİ",
+          "room": "B.L.",
+          "color": "#B45309",
+          "slots": [
+            {
+              "day": 4,
+              "slot": 5
+            },
+            {
+              "day": 4,
+              "slot": 6
+            },
+            {
+              "day": 4,
+              "slot": 7
+            },
+            {
+              "day": 4,
+              "slot": 8
+            },
+            {
+              "day": 4,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Karmaşıklık: Big-O, en iyi/ortalama/en kötü",
+            "Diziler, bağlı listeler ve karşılaştırması",
+            "Yığın (stack) ve uygulamaları",
+            "Kuyruk, öncelik kuyruğu ve deque",
+            "Ağaçlar, ikili ağaç ve dolaşma",
+            "BST, AVL ve dengeli ağaçlara bakış",
+            "Ara sınav haftası",
+            "Heap ve heap sıralama",
+            "Hash tabloları ve çarpışma çözümleri",
+            "Çizgeler: BFS, DFS",
+            "En kısa yol: Dijkstra'ya bakış",
+            "Sıralama algoritmaları karşılaştırması",
+            "Uygulama ödevi ve analiz",
             "Final hazırlık"
           ]
         }
@@ -194,185 +1935,1664 @@
     {
       "id": "spring",
       "label": "Bahar Dönemi",
-      "year": "2026–2027",
-      "weekStart": "2027-02-08",
+      "year": "2025–2026",
+      "weekStart": "2026-02-16",
       "weekCount": 14,
-      "timeSlots": ["08:30–09:20", "09:30–10:20", "10:30–11:20", "11:30–12:20", "13:30–14:20", "14:30–15:20", "15:30–16:20"],
-      "days": ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"],
+      "timeSlots": [
+        "08:30–09:15",
+        "09:30–10:15",
+        "10:30–11:15",
+        "11:30–12:15",
+        "12:30–13:15",
+        "13:30–14:15",
+        "14:30–15:15",
+        "15:30–16:15",
+        "16:30–17:15",
+        "17:30–18:15"
+      ],
+      "days": [
+        "Pazartesi",
+        "Salı",
+        "Çarşamba",
+        "Perşembe",
+        "Cuma"
+      ],
       "courses": [
         {
-          "id": "mat102",
-          "code": "MAT 102",
-          "name": "Matematik II",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "A-201",
+          "id": "b-y3-veritabani-yonetim-sistemleri-a",
+          "year": 3,
+          "code": "Veritabanı Yönetim Sistemleri - A",
+          "name": "Veritabanı Yönetim Sistemleri - A",
+          "instructor": "İsmail H. Parlak",
+          "room": "326 / 311",
           "color": "#1B365D",
-          "slots": [{ "day": 0, "slot": 2 }, { "day": 0, "slot": 3 }, { "day": 2, "slot": 0 }],
+          "slots": [
+            {
+              "day": 0,
+              "slot": 0
+            },
+            {
+              "day": 0,
+              "slot": 1
+            },
+            {
+              "day": 0,
+              "slot": 2
+            },
+            {
+              "day": 0,
+              "slot": 3
+            },
+            {
+              "day": 0,
+              "slot": 4
+            }
+          ],
           "syllabus": [
-            "Çok değişkenli fonksiyonlar",
-            "Kısmi türev",
-            "Gradyan ve ekstremum",
-            "Çok katlı integraller",
-            "Kutupsal koordinatlar",
-            "Eğrisel integraller",
+            "Veri modeli, şema ve ANSI-SPARC",
+            "Varlık-ilişki modeli ve anahtarlar",
+            "İlişkisel model ve bütünlük kısıtları",
+            "SQL: DDL, DML, temel sorgular",
+            "JOIN, gruplama ve alt sorgular",
+            "Görünümler, indeksler ve kısıtlar",
             "Ara sınav haftası",
+            "Normalizasyon: 1NF–3NF, BCNF",
+            "İşlemler, ACID ve eşzamanlılık",
+            "Kurtarma ve yedekleme",
+            "Sorgu eniyilemeye bakış",
+            "Laboratuvar: örnek şema ve sorgular",
+            "Küçük veritabanı projesi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y3-gomulu-sistemler-b",
+          "year": 3,
+          "code": "Gömülü Sistemler - B",
+          "name": "Gömülü Sistemler - B",
+          "instructor": "Ümit Şentürk",
+          "room": "311 / 314",
+          "color": "#047857",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 0
+            },
+            {
+              "day": 0,
+              "slot": 1
+            },
+            {
+              "day": 0,
+              "slot": 2
+            },
+            {
+              "day": 0,
+              "slot": 3
+            },
+            {
+              "day": 0,
+              "slot": 4
+            }
+          ],
+          "syllabus": [
+            "Gömülü sistem tanımı ve kısıtlar",
+            "Mikrodenetleyici seçimi ve çevre birimleri",
+            "Gerçek zaman kavramı ve kesmeler",
+            "Görev, zamanlayıcı ve RTOS'a giriş",
+            "Düşük güç tasarımı",
+            "Donanım-yazılım eş tasarım",
+            "Ara sınav haftası",
+            "Haberleşme yığınları (UART, CAN, kablosuz)",
+            "Güvenilirlik, watchdog ve hata kodları",
+            "Test, JTAG ve hata ayıklama",
+            "Laboratuvar uygulaması",
+            "Proje mimarisi",
+            "Proje gösterimi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y4-bitirme-projesi-ii-grup-1",
+          "year": 4,
+          "code": "Bitirme Projesi II (Grup-1)",
+          "name": "Bitirme Projesi II (Grup-1)",
+          "instructor": "Ferhat Demiray / Ali Çalım / Önder Eyecioğlu",
+          "room": "—",
+          "color": "#0F766E",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 0
+            },
+            {
+              "day": 0,
+              "slot": 1
+            },
+            {
+              "day": 0,
+              "slot": 2
+            },
+            {
+              "day": 0,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "I. dönem kapanışı ve kalan iş listesi",
+            "Uygulama geliştirme sprinti",
+            "Test, doğrulama ve kullanıcı geri bildirimi",
+            "Performans / güvenlik sertleştirme",
+            "Tez / rapor yazımına giriş",
+            "Ara teslim: çalışan sistem",
+            "Ara jüri / danışman kontrolü",
+            "Görsel kimlik, demo senaryosu",
+            "Rapor tamamlama ve kaynakça",
+            "Poster ve sunum provası",
+            "Son hata giderme",
+            "Teslim paketinin hazırlanması",
+            "Jüri sunumu",
+            "Dönem kapanışı ve arşiv"
+          ]
+        },
+        {
+          "id": "b-y1-fizik-ii",
+          "year": 1,
+          "code": "Fizik-II",
+          "name": "Fizik-II",
+          "instructor": "Ferhat Demiray",
+          "room": "327",
+          "color": "#234574",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 4
+            },
+            {
+              "day": 0,
+              "slot": 5
+            },
+            {
+              "day": 0,
+              "slot": 6
+            },
+            {
+              "day": 0,
+              "slot": 7
+            },
+            {
+              "day": 0,
+              "slot": 8
+            }
+          ],
+          "syllabus": [
+            "Elektrik yükü, Coulomb yasası ve elektrik alan",
+            "Gauss yasası ve uygulamaları",
+            "Elektriksel potansiyel ve potansiyel enerji",
+            "Sığa, dielektrikler ve sığaç devreleri",
+            "Akım, direnç ve Ohm yasası",
+            "Doğru akım devreleri ve Kirchhoff kuralları",
+            "Ara sınav haftası",
+            "Manyetik alan ve Lorentz kuvveti",
+            "Akımların manyetik alanı ve Ampère yasası",
+            "Faraday indüksiyon yasası",
+            "Özindüksiyon, RL ve LC devreleri",
+            "Alternatif akım ve RLC devreleri",
+            "Maxwell denklemlerine giriş ve EM dalgalar",
+            "Laboratuvar özeti ve final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y4-biyomedikal-muhendisligine-giris",
+          "year": 4,
+          "code": "Biyomedikal Mühendisliğine Giriş",
+          "name": "Biyomedikal Mühendisliğine Giriş",
+          "instructor": "Ali Çalım",
+          "room": "U.E",
+          "color": "#C2410C",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 4
+            },
+            {
+              "day": 0,
+              "slot": 5
+            },
+            {
+              "day": 0,
+              "slot": 6
+            }
+          ],
+          "syllabus": [
+            "Biyomedikal mühendislik alanları ve cihazlar",
+            "Hücre, doku ve fizyolojiye mühendis bakışı",
+            "Biyo-sinyaller: EKG, EEG, EMG",
+            "Tıbbi görüntüleme modaliteleri (X-ışını, MR, US)",
+            "Biyomalzemeler ve protez",
+            "Biyosensörler",
+            "Ara sınav haftası",
+            "Tıbbi bilişim ve sağlık verisi",
+            "Yapay zekâ ile tanıya bakış",
+            "Güvenlik, IEC 60601 ve hasta güvenliği",
+            "Etik, onam ve klinik araştırma",
+            "Hastane teknolojisi vakası",
+            "Kısa seminerler",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y3-gomulu-sistemler-a",
+          "year": 3,
+          "code": "Gömülü Sistemler - A",
+          "name": "Gömülü Sistemler - A",
+          "instructor": "Ümit Şentürk",
+          "room": "311 / 314",
+          "color": "#2F4984",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 5
+            },
+            {
+              "day": 0,
+              "slot": 6
+            },
+            {
+              "day": 0,
+              "slot": 7
+            },
+            {
+              "day": 0,
+              "slot": 8
+            },
+            {
+              "day": 0,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Gömülü sistem tanımı ve kısıtlar",
+            "Mikrodenetleyici seçimi ve çevre birimleri",
+            "Gerçek zaman kavramı ve kesmeler",
+            "Görev, zamanlayıcı ve RTOS'a giriş",
+            "Düşük güç tasarımı",
+            "Donanım-yazılım eş tasarım",
+            "Ara sınav haftası",
+            "Haberleşme yığınları (UART, CAN, kablosuz)",
+            "Güvenilirlik, watchdog ve hata kodları",
+            "Test, JTAG ve hata ayıklama",
+            "Laboratuvar uygulaması",
+            "Proje mimarisi",
+            "Proje gösterimi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y3-veritabani-yonetim-sistemleri-b",
+          "year": 3,
+          "code": "Veritabanı Yönetim Sistemleri - B",
+          "name": "Veritabanı Yönetim Sistemleri - B",
+          "instructor": "İsmail H. Parlak",
+          "room": "326 / 311",
+          "color": "#059669",
+          "slots": [
+            {
+              "day": 0,
+              "slot": 5
+            },
+            {
+              "day": 0,
+              "slot": 6
+            },
+            {
+              "day": 0,
+              "slot": 7
+            },
+            {
+              "day": 0,
+              "slot": 8
+            },
+            {
+              "day": 0,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Veri modeli, şema ve ANSI-SPARC",
+            "Varlık-ilişki modeli ve anahtarlar",
+            "İlişkisel model ve bütünlük kısıtları",
+            "SQL: DDL, DML, temel sorgular",
+            "JOIN, gruplama ve alt sorgular",
+            "Görünümler, indeksler ve kısıtlar",
+            "Ara sınav haftası",
+            "Normalizasyon: 1NF–3NF, BCNF",
+            "İşlemler, ACID ve eşzamanlılık",
+            "Kurtarma ve yedekleme",
+            "Sorgu eniyilemeye bakış",
+            "Laboratuvar: örnek şema ve sorgular",
+            "Küçük veritabanı projesi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y1-matematik-ii",
+          "year": 1,
+          "code": "Matematik-II",
+          "name": "Matematik-II",
+          "instructor": "Hünkar Kayhan",
+          "room": "327",
+          "color": "#9A3412",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 0
+            },
+            {
+              "day": 1,
+              "slot": 1
+            },
+            {
+              "day": 1,
+              "slot": 2
+            },
+            {
+              "day": 1,
+              "slot": 3
+            },
+            {
+              "day": 1,
+              "slot": 4
+            }
+          ],
+          "syllabus": [
+            "Çok değişkenli fonksiyonlar ve düzey eğrileri",
+            "Kısmi türev, gradyan ve yönlü türev",
+            "Teğet düzlem, ekstremum ve Lagrange çarpanları",
+            "Çift katlı integraller ve bölge dönüşümleri",
+            "Kutupsal koordinatlarda integraller",
+            "Üç katlı integraller ve silindirik/küresel koordinatlar",
+            "Ara sınav haftası",
+            "Eğrisel integraller ve iş hesabı",
             "Green teoremi",
             "Yüzey integralleri",
-            "Stokes ve Gauss",
-            "Diferansiyel denklem girişi",
-            "Birinci mertebe denklemler",
-            "Uygulamalar",
+            "Stokes ve Gauss (diverjans) teoremleri",
+            "Birinci mertebe diferansiyel denklemlere bakış",
+            "Uygulamalı problemler",
             "Final hazırlık"
           ]
         },
         {
-          "id": "fiz102",
-          "code": "FIZ 102",
-          "name": "Fizik II",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "B-105",
-          "color": "#234574",
-          "slots": [{ "day": 1, "slot": 2 }, { "day": 1, "slot": 3 }, { "day": 3, "slot": 5 }],
+          "id": "b-y2-sayisal-elektronik-a",
+          "year": 2,
+          "code": "Sayısal Elektronik - A",
+          "name": "Sayısal Elektronik - A",
+          "instructor": "Ali Çalım",
+          "room": "227 / 314",
+          "color": "#1E3A5F",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 0
+            },
+            {
+              "day": 1,
+              "slot": 1
+            },
+            {
+              "day": 1,
+              "slot": 2
+            },
+            {
+              "day": 1,
+              "slot": 3
+            },
+            {
+              "day": 1,
+              "slot": 4
+            }
+          ],
           "syllabus": [
-            "Elektrik yükü ve alan",
-            "Gauss yasası",
-            "Elektriksel potansiyel",
-            "Sığa",
-            "Akım ve direnç",
-            "Doğru akım devreleri",
+            "Sayı sistemleri ve kodlama (BCD, Gray)",
+            "Boolean cebir ve sadeleştirme",
+            "Karnaugh haritaları",
+            "AND/OR/NOT, NAND/NOR gerçeklemeleri",
+            "Birleşimsel devreler: toplayıcı, kodlayıcı, MUX",
+            "Komparator ve ALU'ya bakış",
             "Ara sınav haftası",
-            "Manyetik alan",
-            "Ampère yasası",
-            "İndüksiyon",
-            "AC devreler",
-            "Maxwell denklemleri",
-            "Laboratuvar özeti",
+            "Latch, flip-flop ve zamanlama",
+            "Sayaçlar ve kaydırma yazmaçları",
+            "Durum makineleri (Moore / Mealy)",
+            "Bellek elemanları ve FPGA'ya bakış",
+            "Laboratuvar: sayısal devre kurma",
+            "Küçük tasarım projesi",
             "Final hazırlık"
           ]
         },
         {
-          "id": "bil112",
-          "code": "BIL 112",
-          "name": "Programlama II",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "C-Lab 2",
-          "color": "#10B981",
-          "slots": [{ "day": 2, "slot": 4 }, { "day": 2, "slot": 5 }, { "day": 4, "slot": 2 }, { "day": 4, "slot": 3 }],
+          "id": "b-y3-sistem-programlama-a",
+          "year": 3,
+          "code": "Sistem Programlama - A",
+          "name": "Sistem Programlama - A",
+          "instructor": "M. Dinçer Erbaş",
+          "room": "326 / 311",
+          "color": "#BE123C",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 0
+            },
+            {
+              "day": 1,
+              "slot": 1
+            },
+            {
+              "day": 1,
+              "slot": 2
+            },
+            {
+              "day": 1,
+              "slot": 3
+            },
+            {
+              "day": 1,
+              "slot": 4
+            }
+          ],
           "syllabus": [
-            "Yapısal programlamanın tekrarı",
-            "Yapılar (struct)",
-            "Dinamik bellek",
-            "Bağlı listeler",
-            "Yığın ve kuyruk",
-            "Ağaçlara giriş",
+            "Kullanıcı / çekirdek uzayı ve ABI",
+            "Linux sistem çağrıları",
+            "Süreç oluşturma: fork, exec, wait",
+            "Sinyaller ve işleyiciler",
+            "Boru, FIFO ve soketlere giriş",
+            "Paylaşılan bellek ve semaforlar",
             "Ara sınav haftası",
-            "Nesne kavramı",
-            "Sınıflar ve nesneler",
-            "Kalıtım",
-            "Çok biçimlilik",
-            "Dosya ve istisnalar",
-            "Dönem projesi",
+            "İş parçacıkları (pthreads)",
+            "Dosya tanımlayıcıları ve G/Ç çoklama",
+            "Dinamik bağlama ve paylaşılan kütüphane",
+            "Kabuk ve betik ile sistem otomasyonu",
+            "Güvenlik: yetki, setuid, chroot bakışı",
+            "Küçük sistem aracı yazımı",
             "Final hazırlık"
           ]
         },
         {
-          "id": "bil122",
-          "code": "BIL 122",
-          "name": "Ayrık Matematik",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "C-210",
-          "color": "#059669",
-          "slots": [{ "day": 0, "slot": 5 }, { "day": 3, "slot": 0 }, { "day": 3, "slot": 1 }],
+          "id": "b-y2-uydu-ve-hucresel-haberlesme",
+          "year": 2,
+          "code": "Uydu ve Hücresel Haberleşme",
+          "name": "Uydu ve Hücresel Haberleşme",
+          "instructor": "M. Alper Akkaş",
+          "room": "U.E",
+          "color": "#0E7490",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 1
+            },
+            {
+              "day": 1,
+              "slot": 2
+            },
+            {
+              "day": 1,
+              "slot": 3
+            }
+          ],
           "syllabus": [
-            "Mantık ve önermeler",
-            "Kümeler",
-            "Bağıntılar",
-            "Fonksiyonlar",
-            "İndüksiyon",
-            "Sayma teknikleri",
+            "Haberleşme sistemine giriş ve spektrum",
+            "Hücresel kavram: hücre, reuse, kapasite",
+            "2G/3G bakışı ve GSM mimarisi",
+            "LTE / 4G temel mimari",
+            "5G'ye giriş: numeroloji ve dilimleme",
+            "Radyo yayılımı, fading ve SNR",
             "Ara sınav haftası",
-            "Çizgeler I",
-            "Çizgeler II",
-            "Ağaçlar",
-            "Boolean cebir",
-            "Sonlu otomatlara bakış",
-            "Problem çözümü",
+            "Çoklu erişim: FDMA, TDMA, CDMA, OFDMA",
+            "Uydu yörüngeleri: LEO, MEO, GEO",
+            "Uydu bağlantı bütçesi",
+            "VSAT, GPS ve IoT uyduları",
+            "Mobil şebeke çekirdeği ve roaming",
+            "Güncel standartlar ve vaka",
             "Final hazırlık"
           ]
         },
         {
-          "id": "tur102",
-          "code": "TUR 102",
-          "name": "Türk Dili II",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "A-110",
-          "color": "#2F4984",
-          "slots": [{ "day": 4, "slot": 0 }],
+          "id": "b-y4-bilgi-ve-ag-guvenligi",
+          "year": 4,
+          "code": "Bilgi ve Ağ Güvenliği",
+          "name": "Bilgi ve Ağ Güvenliği",
+          "instructor": "Ali Yılmaz",
+          "room": "311",
+          "color": "#365314",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 1
+            },
+            {
+              "day": 1,
+              "slot": 2
+            },
+            {
+              "day": 1,
+              "slot": 3
+            }
+          ],
           "syllabus": [
-            "Kompozisyon türleri",
-            "Düşünce yazıları",
-            "Bilimsel metin",
-            "Alıntı ve kaynakça",
-            "Rapor yazımı",
-            "Özgeçmiş",
+            "Tehdit modeli, CIA üçlüsü ve risk",
+            "Kriptografi: simetrik şifreleme",
+            "Açık anahtar, özet ve dijital imza",
+            "Kimlik doğrulama ve anahtar dağıtımı",
+            "Ağ saldırıları: dinleme, MITM, DDoS",
+            "Güvenlik duvarı, IDS/IPS ve VPN",
             "Ara sınav haftası",
-            "Söylev",
-            "Tartışma dili",
-            "Medya metinleri",
+            "Web güvenliği: OWASP bakışı",
+            "İşletim sistemi ve bellek güvenliği",
+            "Kötücül yazılım ve analiz fikri",
+            "Güvenli yazılım geliştirme",
+            "Olay müdahalesi ve günlükler",
+            "Laboratuvar / yakalama ortamı etiği",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y2-python-programlama-giris",
+          "year": 2,
+          "code": "Python Programlama Giriş",
+          "name": "Python Programlama Giriş",
+          "instructor": "Ali Yılmaz",
+          "room": "311",
+          "color": "#6B21A8",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 5
+            },
+            {
+              "day": 1,
+              "slot": 6
+            },
+            {
+              "day": 1,
+              "slot": 7
+            }
+          ],
+          "syllabus": [
+            "Python kurulumu, REPL ve ilk betik",
+            "Tipler, listeler, sözlükler ve demetler",
+            "Koşul, döngü ve fonksiyonlar",
+            "Modüller, paketler ve sanal ortam",
+            "Dosya okuma-yazma ve CSV",
+            "Hata yakalama ve hata ayıklama",
+            "Ara sınav haftası",
+            "NumPy ile diziler",
+            "Pandas'a giriş ve veri çerçevesi",
+            "Görselleştirme: Matplotlib",
+            "Nesne tabanlı Python",
+            "Küçük veri / otomasyon projesi",
+            "Kod stili (PEP 8) ve Git",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y2-sayisal-elektronik-b",
+          "year": 2,
+          "code": "Sayısal Elektronik - B",
+          "name": "Sayısal Elektronik - B",
+          "instructor": "Ali Çalım",
+          "room": "327 / 314",
+          "color": "#1D4ED8",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 5
+            },
+            {
+              "day": 1,
+              "slot": 6
+            },
+            {
+              "day": 1,
+              "slot": 7
+            },
+            {
+              "day": 1,
+              "slot": 8
+            },
+            {
+              "day": 1,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Sayı sistemleri ve kodlama (BCD, Gray)",
+            "Boolean cebir ve sadeleştirme",
+            "Karnaugh haritaları",
+            "AND/OR/NOT, NAND/NOR gerçeklemeleri",
+            "Birleşimsel devreler: toplayıcı, kodlayıcı, MUX",
+            "Komparator ve ALU'ya bakış",
+            "Ara sınav haftası",
+            "Latch, flip-flop ve zamanlama",
+            "Sayaçlar ve kaydırma yazmaçları",
+            "Durum makineleri (Moore / Mealy)",
+            "Bellek elemanları ve FPGA'ya bakış",
+            "Laboratuvar: sayısal devre kurma",
+            "Küçük tasarım projesi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y3-sistem-programlama-b",
+          "year": 3,
+          "code": "Sistem Programlama - B",
+          "name": "Sistem Programlama - B",
+          "instructor": "M. Dinçer Erbaş",
+          "room": "326 / 311",
+          "color": "#B45309",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 5
+            },
+            {
+              "day": 1,
+              "slot": 6
+            },
+            {
+              "day": 1,
+              "slot": 7
+            },
+            {
+              "day": 1,
+              "slot": 8
+            },
+            {
+              "day": 1,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Kullanıcı / çekirdek uzayı ve ABI",
+            "Linux sistem çağrıları",
+            "Süreç oluşturma: fork, exec, wait",
+            "Sinyaller ve işleyiciler",
+            "Boru, FIFO ve soketlere giriş",
+            "Paylaşılan bellek ve semaforlar",
+            "Ara sınav haftası",
+            "İş parçacıkları (pthreads)",
+            "Dosya tanımlayıcıları ve G/Ç çoklama",
+            "Dinamik bağlama ve paylaşılan kütüphane",
+            "Kabuk ve betik ile sistem otomasyonu",
+            "Güvenlik: yetki, setuid, chroot bakışı",
+            "Küçük sistem aracı yazımı",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y4-bilgisayarli-gorme",
+          "year": 4,
+          "code": "Bilgisayarlı Görme",
+          "name": "Bilgisayarlı Görme",
+          "instructor": "İsmail H. Parlak",
+          "room": "227",
+          "color": "#1B365D",
+          "slots": [
+            {
+              "day": 1,
+              "slot": 5
+            },
+            {
+              "day": 1,
+              "slot": 6
+            },
+            {
+              "day": 1,
+              "slot": 7
+            }
+          ],
+          "syllabus": [
+            "Görüntü oluşumu, piksel ve renk uzayları",
+            "İyileştirme: histogram, süzgeçler",
+            "Kenar sezimi ve gradyan",
+            "Öznitelik: köşe, SIFT/ORB bakışı",
+            "Geometrik dönüşümler ve homografi",
+            "Kamera modeli ve kalibrasyona giriş",
+            "Ara sınav haftası",
+            "Bölütleme ve morfoloji",
+            "Nesne tanıma: klasik vs derin öğrenme",
+            "CNN ile sınıflandırmaya bakış",
+            "Video, izleme ve optik akış fikri",
+            "Uygulama: OpenCV pratikleri",
+            "Mini görme projesi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y1-turk-dili-ii",
+          "year": 1,
+          "code": "Türk Dili - II",
+          "name": "Türk Dili - II",
+          "instructor": "Hilal Aksoy",
+          "room": "U.E.",
+          "color": "#047857",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 0
+            },
+            {
+              "day": 2,
+              "slot": 1
+            }
+          ],
+          "syllabus": [
+            "Kompozisyon türleri ve düşünce yazısı",
+            "Bilimsel metin ve akademik üslup",
+            "Alıntı, dipnot ve kaynakça (APA)",
+            "Rapor, özgeçmiş ve niyet mektubu",
             "Eleştirel okuma",
-            "Sunum",
-            "Portfolyo",
+            "Tartışma ve söylev dili",
+            "Ara sınav haftası",
+            "Medya metinleri ve dijital okuryazarlık",
+            "Teknik anlatım ve kullanıcı metni",
+            "Özet, parafraz ve intihalden kaçınma",
+            "Sözlü sunum ve poster",
+            "Portfolyo hazırlığı",
+            "Yazma atölyesi",
             "Dönem sonu"
           ]
         },
         {
-          "id": "ata102",
-          "code": "ATA 102",
-          "name": "Atatürk İlkeleri ve İnkılap Tarihi II",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "A-112",
+          "id": "b-y2-simulasyon-sistemleri",
+          "year": 2,
+          "code": "Simülasyon Sistemleri",
+          "name": "Simülasyon Sistemleri",
+          "instructor": "Ferhat Demiray",
+          "room": "311",
           "color": "#0F766E",
-          "slots": [{ "day": 4, "slot": 1 }],
+          "slots": [
+            {
+              "day": 2,
+              "slot": 0
+            },
+            {
+              "day": 2,
+              "slot": 1
+            },
+            {
+              "day": 2,
+              "slot": 2
+            },
+            {
+              "day": 2,
+              "slot": 3
+            },
+            {
+              "day": 2,
+              "slot": 4
+            }
+          ],
           "syllabus": [
-            "Siyasi inkılaplar",
-            "Hukuk inkılabı",
-            "Eğitim ve kültür",
-            "Toplumsal yaşamdaki değişim",
-            "Ekonomi politikaları",
-            "Atatürk ilkeleri I",
+            "Simülasyon nedir, ne zaman kullanılır",
+            "Sistem, model ve rastgelelik",
+            "Rassal sayı üretimi ve dağılım örnekleme",
+            "Kesikli olay simülasyonu",
+            "Kuyruk modelleri (M/M/1, M/M/c)",
+            "Girdi modelleme ve veri toplama",
             "Ara sınav haftası",
-            "Atatürk ilkeleri II",
-            "Dış politika",
-            "II. Dünya Savaşı yılları",
-            "Çok partili hayat",
-            "Çağdaş Türkiye",
-            "Tartışma",
+            "Çıktı analizi ve güven aralığı",
+            "Doğrulama ve geçerleme (V&V)",
+            "Animasyon ve senaryo tasarımı",
+            "Araçlar: örnek simülasyon yazılımı",
+            "Proje: küçük bir sistemin modeli",
+            "Proje sunumları",
             "Final hazırlık"
           ]
         },
         {
-          "id": "ing102",
-          "code": "ING 102",
-          "name": "İngilizce II",
-          "instructor": "Örnek Öğretim Üyesi",
-          "room": "D-204",
-          "color": "#047857",
-          "slots": [{ "day": 1, "slot": 5 }, { "day": 1, "slot": 6 }],
+          "id": "b-y4-bitirme-projesi-ii-grup-2",
+          "year": 4,
+          "code": "Bitirme Projesi II (Grup-2)",
+          "name": "Bitirme Projesi II (Grup-2)",
+          "instructor": "Hünkar Kayhan / Ali Yılmaz / Mehmet Milli / İsmail H. Parlak",
+          "room": "—",
+          "color": "#234574",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 0
+            },
+            {
+              "day": 2,
+              "slot": 1
+            },
+            {
+              "day": 2,
+              "slot": 2
+            },
+            {
+              "day": 2,
+              "slot": 3
+            }
+          ],
           "syllabus": [
-            "Academic writing recap",
-            "Compare & contrast",
-            "Cause and effect",
-            "Technical descriptions",
-            "Data commentary",
-            "Abstract writing",
+            "I. dönem kapanışı ve kalan iş listesi",
+            "Uygulama geliştirme sprinti",
+            "Test, doğrulama ve kullanıcı geri bildirimi",
+            "Performans / güvenlik sertleştirme",
+            "Tez / rapor yazımına giriş",
+            "Ara teslim: çalışan sistem",
+            "Ara jüri / danışman kontrolü",
+            "Görsel kimlik, demo senaryosu",
+            "Rapor tamamlama ve kaynakça",
+            "Poster ve sunum provası",
+            "Son hata giderme",
+            "Teslim paketinin hazırlanması",
+            "Jüri sunumu",
+            "Dönem kapanışı ve arşiv"
+          ]
+        },
+        {
+          "id": "b-y4-kuantumsal-hes-temelleri",
+          "year": 4,
+          "code": "Kuantumsal Hes. Temelleri",
+          "name": "Kuantumsal Hes. Temelleri",
+          "instructor": "Önder Eyecioğlu",
+          "room": "326",
+          "color": "#C2410C",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 1
+            },
+            {
+              "day": 2,
+              "slot": 2
+            },
+            {
+              "day": 2,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Klasik bit vs kübit, süperpozisyon",
+            "Dirac gösterimi ve Hilbert uzayı",
+            "Ölçüm ve Born kuralı",
+            "Kuantum kapıları: X, H, CNOT",
+            "Dolaşıklık ve Bell durumları",
+            "Basit devreler ve simülatör",
             "Ara sınav haftası",
-            "Oral presentation",
-            "Discussion skills",
-            "CV and cover letter",
+            "Deutsch–Jozsa fikri",
+            "Grover aramasına bakış",
+            "Shor algoritmasına kavramsal bakış",
+            "Kuantum hata ve gürültü",
+            "Donanım yaklaşımları",
+            "Makale / demo",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y1-girisimcilik",
+          "year": 1,
+          "code": "Girişimcilik",
+          "name": "Girişimcilik",
+          "instructor": "Gökay Akkaya",
+          "room": "327",
+          "color": "#2F4984",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 3
+            },
+            {
+              "day": 2,
+              "slot": 4
+            },
+            {
+              "day": 2,
+              "slot": 5
+            },
+            {
+              "day": 2,
+              "slot": 6
+            }
+          ],
+          "syllabus": [
+            "Girişimcilik zihniyeti ve fırsat görme",
+            "Müşteri, problem ve değer önerisi",
+            "İş modeli tuvali",
+            "Pazar araştırması ve rakip analizi",
+            "MVP ve yalın girişim",
+            "Takım, ortaklık ve şirket türleri",
+            "Ara sınav haftası",
+            "Gelir modeli ve fiyatlama",
+            "Yatırım, hibeler ve üniversite TTO",
+            "Fikri mülkiyet ve marka",
+            "Sunum (pitch) tekniği",
+            "Öğrenci iş fikri atölyesi",
+            "Pitch günü",
+            "Dönem kapanışı"
+          ]
+        },
+        {
+          "id": "b-y3-arastirma-y-ve-seminer",
+          "year": 3,
+          "code": "Araştırma Y. ve Seminer",
+          "name": "Araştırma Y. ve Seminer",
+          "instructor": "Ferhat Demiray",
+          "room": "311",
+          "color": "#059669",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 5
+            },
+            {
+              "day": 2,
+              "slot": 6
+            },
+            {
+              "day": 2,
+              "slot": 7
+            }
+          ],
+          "syllabus": [
+            "Bilimsel araştırma nedir, soru nasıl kurulur",
+            "Literatür tarama: IEEE, ACM, Google Scholar",
+            "Makale okuma stratejisi ve eleştiri",
+            "Alıntı, etik ve intihal",
+            "Deney, ölçüm ve tekrarlanabilirlik",
+            "Teknik yazım: özet, giriş, yöntem",
+            "Ara sınav / öneri teslimi",
+            "Görselleştirme ve poster",
+            "Sözlü seminer teknikleri",
+            "Öğrenci seminerleri I",
+            "Öğrenci seminerleri II",
+            "Öğrenci seminerleri III",
+            "Geri bildirim ve düzeltme",
+            "Dönem dosyası teslimi"
+          ]
+        },
+        {
+          "id": "b-y4-veri-iletisimi-ve-bilg-aglari",
+          "year": 4,
+          "code": "Veri İletişimi ve Bilg. Ağları",
+          "name": "Veri İletişimi ve Bilg. Ağları",
+          "instructor": "M. Dinçer Erbaş",
+          "room": "123 / 311",
+          "color": "#9A3412",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 5
+            },
+            {
+              "day": 2,
+              "slot": 6
+            },
+            {
+              "day": 2,
+              "slot": 7
+            },
+            {
+              "day": 2,
+              "slot": 8
+            },
+            {
+              "day": 2,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Katmanlı mimari: OSI ve TCP/IP",
+            "Fiziksel katman: ortam, kodlama, kapasite",
+            "Veri bağlantısı: çerçeveleme, CRC, MAC",
+            "Ethernet ve anahtarlama",
+            "IP adresleme, alt ağ ve CIDR",
+            "Yönlendirme: uzak vektör ve durum",
+            "Ara sınav haftası",
+            "TCP, UDP ve tıkanıklık kontrolü",
+            "DNS, HTTP/HTTPS ve uygulama katmanı",
+            "Kablosuz LAN ve NAT",
+            "Ağ güvenliğine giriş",
+            "Wireshark / laboratuvar",
+            "Küçük ağ tasarım ödevi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y2-olasilik-ve-istatistik",
+          "year": 2,
+          "code": "Olasılık ve İstatistik",
+          "name": "Olasılık ve İstatistik",
+          "instructor": "Hünkar Kayhan",
+          "room": "326",
+          "color": "#1E3A5F",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 6
+            },
+            {
+              "day": 2,
+              "slot": 7
+            },
+            {
+              "day": 2,
+              "slot": 8
+            }
+          ],
+          "syllabus": [
+            "Örnek uzay, olay ve aksiyomatik olasılık",
+            "Koşullu olasılık ve Bayes teoremi",
+            "Bağımsızlık ve sayma teknikleri",
+            "Kesikli rassal değişkenler, PMF, beklenen değer",
+            "Binom, Poisson ve geometrik dağılımlar",
+            "Sürekli rassal değişkenler, PDF, CDF",
+            "Ara sınav haftası",
+            "Normal dağılım ve merkezi limit teoremi",
+            "Ortak dağılımlar ve korelasyon",
+            "Örnekleme ve nokta tahmini",
+            "Güven aralıkları",
+            "Hipotez testlerine giriş",
+            "Regresyona bakış ve mühendislik örnekleri",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y1-a-i-i-t-ii",
+          "year": 1,
+          "code": "A.İ.İ.T. II",
+          "name": "A.İ.İ.T. II",
+          "instructor": "Ahmet Ercivan",
+          "room": "U.E.",
+          "color": "#BE123C",
+          "slots": [
+            {
+              "day": 2,
+              "slot": 7
+            },
+            {
+              "day": 2,
+              "slot": 8
+            }
+          ],
+          "syllabus": [
+            "Siyasi inkılaplar ve anayasa gelişimi",
+            "Hukuk inkılabı ve Medeni Kanun",
+            "Eğitim, harf ve kültür inkılapları",
+            "Toplumsal yaşam ve kadın hakları",
+            "Ekonomi politikaları ve millî iktisat",
+            "Atatürk ilkeleri: cumhuriyetçilik ve milliyetçilik",
+            "Ara sınav haftası",
+            "Halkçılık, devletçilik, laiklik, inkılapçılık",
+            "Atatürk dönemi dış politika",
+            "II. Dünya Savaşı yıllarında Türkiye",
+            "Çok partili hayata geçiş",
+            "Çağdaş Türkiye ve demokratikleşme",
+            "Güncel tartışmalar",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y2-proje-plan-ve-yonet",
+          "year": 2,
+          "code": "Proje Plan. ve Yönet.",
+          "name": "Proje Plan. ve Yönet.",
+          "instructor": "Önder Eyecioğlu",
+          "room": "327",
+          "color": "#0E7490",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 0
+            },
+            {
+              "day": 3,
+              "slot": 1
+            },
+            {
+              "day": 3,
+              "slot": 2
+            }
+          ],
+          "syllabus": [
+            "Proje, program, portföy kavramları",
+            "Paydaş analizi ve kapsam tanımı",
+            "WBS ve iş paketleri",
+            "Zaman planı: Gantt, CPM, PERT",
+            "Kaynak ve maliyet tahmini",
+            "Risk yönetimi",
+            "Ara sınav haftası",
+            "Çevik / Scrum bakışı",
+            "Kalite, iletişim ve raporlama",
+            "Yazılım projelerinde ölçüm (velocity, burndown)",
+            "Değişiklik ve konfigürasyon yönetimi",
+            "Örnek proje planı hazırlama",
+            "Sunumlar",
+            "Dönem kapanışı"
+          ]
+        },
+        {
+          "id": "b-y3-sinyaller-ve-sistemler-a",
+          "year": 3,
+          "code": "Sinyaller ve Sistemler - A",
+          "name": "Sinyaller ve Sistemler - A",
+          "instructor": "M. Alper Akkaş",
+          "room": "326",
+          "color": "#365314",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 0
+            },
+            {
+              "day": 3,
+              "slot": 1
+            },
+            {
+              "day": 3,
+              "slot": 2
+            }
+          ],
+          "syllabus": [
+            "Sinyal sınıfları ve temel işlemler",
+            "LTI sistemler, dürtü yanıtı ve evrişim",
+            "Fourier serileri",
+            "Sürekli zaman Fourier dönüşümü",
+            "Örnekleme teoremi ve aliasing",
+            "Ayrık zaman Fourier dönüşümü (DTFT)",
+            "Ara sınav haftası",
+            "DFT / FFT'ye bakış",
+            "Laplace dönüşümü ve kararlılık",
+            "Z dönüşümü",
+            "Frekans seçici süzgeç fikri",
+            "MATLAB / Python ile örnekler",
+            "Uygulama: ses veya görüntü 1B sinyali",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y1-lineer-cebir",
+          "year": 1,
+          "code": "Lineer Cebir",
+          "name": "Lineer Cebir",
+          "instructor": "Hünkar Kayhan",
+          "room": "227",
+          "color": "#6B21A8",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 1
+            },
+            {
+              "day": 3,
+              "slot": 2
+            },
+            {
+              "day": 3,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Sistemler, matrisler ve Gauss eleme",
+            "Matris işlemleri ve ters matris",
+            "Determinantlar ve Cramer kuralı",
+            "Vektör uzayları ve altuzaylar",
+            "Lineer bağımsızlık, taban ve boyut",
+            "Satır uzayı, sütun uzayı ve rank",
+            "Ara sınav haftası",
+            "Lineer dönüşümler ve matris temsili",
+            "Özdeğer, özvektör ve köşegenleştirme",
+            "İç çarpım, diklik ve Gram-Schmidt",
+            "En küçük kareler",
+            "Simetrik matrisler ve kuadratik formlar",
+            "Bilgisayarda lineer cebir uygulamaları",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y3-sinyaller-ve-sistemler-b",
+          "year": 3,
+          "code": "Sinyaller ve Sistemler - B",
+          "name": "Sinyaller ve Sistemler - B",
+          "instructor": "M. Alper Akkaş",
+          "room": "326",
+          "color": "#1D4ED8",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 3
+            },
+            {
+              "day": 3,
+              "slot": 4
+            },
+            {
+              "day": 3,
+              "slot": 5
+            }
+          ],
+          "syllabus": [
+            "Sinyal sınıfları ve temel işlemler",
+            "LTI sistemler, dürtü yanıtı ve evrişim",
+            "Fourier serileri",
+            "Sürekli zaman Fourier dönüşümü",
+            "Örnekleme teoremi ve aliasing",
+            "Ayrık zaman Fourier dönüşümü (DTFT)",
+            "Ara sınav haftası",
+            "DFT / FFT'ye bakış",
+            "Laplace dönüşümü ve kararlılık",
+            "Z dönüşümü",
+            "Frekans seçici süzgeç fikri",
+            "MATLAB / Python ile örnekler",
+            "Uygulama: ses veya görüntü 1B sinyali",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y4-goruntu-isleme",
+          "year": 4,
+          "code": "Görüntü İşleme",
+          "name": "Görüntü İşleme",
+          "instructor": "Ümit Şentürk",
+          "room": "311",
+          "color": "#B45309",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 3
+            },
+            {
+              "day": 3,
+              "slot": 4
+            },
+            {
+              "day": 3,
+              "slot": 5
+            }
+          ],
+          "syllabus": [
+            "Sayısal görüntü, örnekleme ve nicemleme",
+            "Nokta işlemleri ve histogram eşitleme",
+            "Uzamsal süzgeçler: yumuşatma, keskinleştirme",
+            "Frekans bölgesi ve 2B Fourier",
+            "Gürültü modelleri ve onarım",
+            "Morfolojik işlemler",
+            "Ara sınav haftası",
+            "Kenar, çizgi ve Hough",
+            "Bölütleme: eşik, watershed bakışı",
+            "Renk işleme",
+            "Sıkıştırma: JPEG fikri",
+            "Laboratuvar uygulamaları",
+            "Ödev projesi",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y2-otomata-teorisi-a",
+          "year": 2,
+          "code": "Otomata Teorisi - A",
+          "name": "Otomata Teorisi - A",
+          "instructor": "Önder Eyecioğlu",
+          "room": "327",
+          "color": "#1B365D",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 4
+            },
+            {
+              "day": 3,
+              "slot": 5
+            },
+            {
+              "day": 3,
+              "slot": 6
+            }
+          ],
+          "syllabus": [
+            "Alfabe, dil ve dil işlemleri",
+            "DFA: belirleyici sonlu otomatlar",
+            "NFA ve epsilon geçişleri",
+            "DFA–NFA eşdeğerliği ve minimizasyon",
+            "Düzenli ifadeler ve düzenli diller",
+            "Pumping lemma (düzenli diller)",
+            "Ara sınav haftası",
+            "Bağlamdan bağımsız gramerler",
+            "Parse ağaçları ve belirsizlik",
+            "Pushdown otomatlar",
+            "Chomsky hiyerarşisine bakış",
+            "Turing makinelerine giriş",
+            "Karar verilebilirlik tartışması",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y1-yabanci-dil-ii",
+          "year": 1,
+          "code": "Yabancı Dil - II",
+          "name": "Yabancı Dil - II",
+          "instructor": "Filiz Kırali",
+          "room": "U.E.",
+          "color": "#047857",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 6
+            },
+            {
+              "day": 3,
+              "slot": 7
+            }
+          ],
+          "syllabus": [
+            "Academic writing tekrarı",
+            "Compare & contrast paragrafları",
+            "Cause and effect",
+            "Technical descriptions ve süreç anlatımı",
+            "Data commentary: grafik ve tablo yorumu",
+            "Abstract ve özet yazımı",
+            "Ara sınav haftası",
+            "Oral presentation teknikleri",
+            "Discussion ve debate dili",
+            "CV, cover letter ve LinkedIn İngilizcesi",
             "Interview English",
             "Reading seminar",
-            "Project",
+            "Mini proje sunumu",
             "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y4-bulut-bilisim",
+          "year": 4,
+          "code": "Bulut Bilişim",
+          "name": "Bulut Bilişim",
+          "instructor": "İsmail H. Parlak",
+          "room": "U.E",
+          "color": "#0F766E",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 6
+            },
+            {
+              "day": 3,
+              "slot": 7
+            },
+            {
+              "day": 3,
+              "slot": 8
+            }
+          ],
+          "syllabus": [
+            "Bulut hizmet modelleri: IaaS, PaaS, SaaS",
+            "Sanallaştırma ve konteyner",
+            "Bölge, erişilebilirlik bölgesi ve SLA",
+            "Hesaplama, depolama ve nesne deposu",
+            "Ağ: VPC, yük dengeleyici",
+            "Kimlik ve erişim yönetimi",
+            "Ara sınav haftası",
+            "Otomatik ölçekleme ve izleme",
+            "Sunucusuz (serverless) bakışı",
+            "Maliyet, FinOps ve kapatmayı unutmak",
+            "Güvenlik paylaşılan sorumluluk modeli",
+            "Laboratuvar: örnek bulut servisi",
+            "Mimari ödev",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y2-otomata-teorisi-b",
+          "year": 2,
+          "code": "Otomata Teorisi - B",
+          "name": "Otomata Teorisi - B",
+          "instructor": "Önder Eyecioğlu",
+          "room": "327",
+          "color": "#234574",
+          "slots": [
+            {
+              "day": 3,
+              "slot": 7
+            },
+            {
+              "day": 3,
+              "slot": 8
+            },
+            {
+              "day": 3,
+              "slot": 9
+            }
+          ],
+          "syllabus": [
+            "Alfabe, dil ve dil işlemleri",
+            "DFA: belirleyici sonlu otomatlar",
+            "NFA ve epsilon geçişleri",
+            "DFA–NFA eşdeğerliği ve minimizasyon",
+            "Düzenli ifadeler ve düzenli diller",
+            "Pumping lemma (düzenli diller)",
+            "Ara sınav haftası",
+            "Bağlamdan bağımsız gramerler",
+            "Parse ağaçları ve belirsizlik",
+            "Pushdown otomatlar",
+            "Chomsky hiyerarşisine bakış",
+            "Turing makinelerine giriş",
+            "Karar verilebilirlik tartışması",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y1-c-programlama-a",
+          "year": 1,
+          "code": "C Programlama - A",
+          "name": "C Programlama - A",
+          "instructor": "Mehmet Milli",
+          "room": "311",
+          "color": "#C2410C",
+          "slots": [
+            {
+              "day": 4,
+              "slot": 0
+            },
+            {
+              "day": 4,
+              "slot": 1
+            },
+            {
+              "day": 4,
+              "slot": 2
+            },
+            {
+              "day": 4,
+              "slot": 3
+            }
+          ],
+          "syllabus": [
+            "Geliştirme ortamı, derleme ve ilk C programı",
+            "Veri tipleri, değişkenler ve operatörler",
+            "Koşullu ifadeler ve switch",
+            "Döngüler: for, while, do-while",
+            "Diziler ve karakter dizileri",
+            "Fonksiyonlar, parametre aktarımı ve özyineleme",
+            "Ara sınav haftası",
+            "İşaretçiler ve bellek adresi",
+            "Dinamik bellek: malloc, calloc, free",
+            "Yapılar (struct) ve birleşimler",
+            "Dosya işlemleri",
+            "Ön işlemci ve çok dosyalı projeler",
+            "Küçük uygulama projesi",
+            "Final hazırlık ve kod incelemesi"
+          ]
+        },
+        {
+          "id": "b-y3-yazilim-muhendisligi",
+          "year": 3,
+          "code": "Yazılım Mühendisliği",
+          "name": "Yazılım Mühendisliği",
+          "instructor": "Önder Eyecioğlu",
+          "room": "327",
+          "color": "#2F4984",
+          "slots": [
+            {
+              "day": 4,
+              "slot": 0
+            },
+            {
+              "day": 4,
+              "slot": 1
+            },
+            {
+              "day": 4,
+              "slot": 2
+            },
+            {
+              "day": 4,
+              "slot": 3
+            },
+            {
+              "day": 4,
+              "slot": 4
+            }
+          ],
+          "syllabus": [
+            "Yazılım süreci modelleri: şelale, artımlı, çevik",
+            "Gereksinim mühendisliği ve kullanıcı hikâyesi",
+            "Analiz modelleri ve kullanım durumları",
+            "Mimari tasarım ve kalite öznitelikleri",
+            "Ayrıntılı tasarım ve arayüz sözleşmesi",
+            "Kodlama standartları ve kod incelemesi",
+            "Ara sınav haftası",
+            "Yazılım testi: birim, tümleştirme, sistem",
+            "Sürüm, CI ve yapı yönetimi",
+            "Bakım, evrim ve teknik borç",
+            "Proje yönetimi ve tahmin",
+            "Takım projesi sprinti",
+            "Proje teslimi ve retrospektif",
+            "Final hazırlık"
+          ]
+        },
+        {
+          "id": "b-y1-c-programlama-b",
+          "year": 1,
+          "code": "C Programlama - B",
+          "name": "C Programlama - B",
+          "instructor": "Mehmet Milli",
+          "room": "311",
+          "color": "#059669",
+          "slots": [
+            {
+              "day": 4,
+              "slot": 5
+            },
+            {
+              "day": 4,
+              "slot": 6
+            },
+            {
+              "day": 4,
+              "slot": 7
+            },
+            {
+              "day": 4,
+              "slot": 8
+            }
+          ],
+          "syllabus": [
+            "Geliştirme ortamı, derleme ve ilk C programı",
+            "Veri tipleri, değişkenler ve operatörler",
+            "Koşullu ifadeler ve switch",
+            "Döngüler: for, while, do-while",
+            "Diziler ve karakter dizileri",
+            "Fonksiyonlar, parametre aktarımı ve özyineleme",
+            "Ara sınav haftası",
+            "İşaretçiler ve bellek adresi",
+            "Dinamik bellek: malloc, calloc, free",
+            "Yapılar (struct) ve birleşimler",
+            "Dosya işlemleri",
+            "Ön işlemci ve çok dosyalı projeler",
+            "Küçük uygulama projesi",
+            "Final hazırlık ve kod incelemesi"
+          ]
+        },
+        {
+          "id": "b-y4-bitirme-projesi-ii-grup-3",
+          "year": 4,
+          "code": "Bitirme Projesi II (Grup-3)",
+          "name": "Bitirme Projesi II (Grup-3)",
+          "instructor": "M. Dinçer Erbaş / M. Alper Akkaş / Ümit Şentürk",
+          "room": "—",
+          "color": "#9A3412",
+          "slots": [
+            {
+              "day": 4,
+              "slot": 5
+            },
+            {
+              "day": 4,
+              "slot": 6
+            },
+            {
+              "day": 4,
+              "slot": 7
+            },
+            {
+              "day": 4,
+              "slot": 8
+            }
+          ],
+          "syllabus": [
+            "I. dönem kapanışı ve kalan iş listesi",
+            "Uygulama geliştirme sprinti",
+            "Test, doğrulama ve kullanıcı geri bildirimi",
+            "Performans / güvenlik sertleştirme",
+            "Tez / rapor yazımına giriş",
+            "Ara teslim: çalışan sistem",
+            "Ara jüri / danışman kontrolü",
+            "Görsel kimlik, demo senaryosu",
+            "Rapor tamamlama ve kaynakça",
+            "Poster ve sunum provası",
+            "Son hata giderme",
+            "Teslim paketinin hazırlanması",
+            "Jüri sunumu",
+            "Dönem kapanışı ve arşiv"
+          ]
+        },
+        {
+          "id": "b-y3-sektorde-yazilim-test-muh",
+          "year": 3,
+          "code": "Sektörde Yazılım Test Müh.",
+          "name": "Sektörde Yazılım Test Müh.",
+          "instructor": "Abdurrahman Akın",
+          "room": "U.E.",
+          "color": "#1E3A5F",
+          "slots": [
+            {
+              "day": 4,
+              "slot": 6
+            },
+            {
+              "day": 4,
+              "slot": 7
+            },
+            {
+              "day": 4,
+              "slot": 8
+            }
+          ],
+          "syllabus": [
+            "Testin amacı, hata / kusur / başarısızlık",
+            "Test piramidi ve test seviyeleri",
+            "Kara kutu teknikleri: denklik, sınır değer",
+            "Beyaz kutu: kapsama metrikleri",
+            "Test planı, vaka ve senaryo yazımı",
+            "Hata yaşam döngüsü ve izleme araçları",
+            "Ara sınav haftası",
+            "Otomasyon: birim ve API testleri",
+            "UI otomasyonu ve kırılgan testler",
+            "Performans, yük ve güvenlik testine bakış",
+            "CI hattında test",
+            "Sektör vakası / konuk anlatımı",
+            "Mini test otomasyon ödevi",
+            "Dönem kapanışı"
           ]
         }
       ]

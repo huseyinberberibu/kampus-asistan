@@ -5,7 +5,9 @@
   const state = {
     cursor: new Date(),
     selected: new Date(),
-    meals: []
+    meals: [],
+    breakfastTime: "07:30 – 09:30",
+    dinnerTime: "17:00 – 19:30"
   };
 
   state.cursor.setDate(1);
@@ -73,20 +75,28 @@
 
   function mealItems(items) {
     return items.map(function (item) {
-      return '<li><span class="dot"></span><span>' + item.name + "</span></li>";
+      const portion = item.portion
+        ? '<span class="meal-item-portion">' + item.portion + "</span>"
+        : "";
+      return (
+        "<li>" +
+          '<span class="dot"></span>' +
+          '<span class="meal-item-name">' + item.name + "</span>" +
+          portion +
+        "</li>"
+      );
     }).join("");
   }
 
-  function mealCard(title, meal, kind) {
+  function mealCard(title, meal, time) {
     if (!meal) return "";
-    const image = meal.image || (kind === "breakfast" ? "assets/img/breakfast.svg" : "assets/img/dinner.svg");
+    const when = time || meal.time || "";
     return (
       '<article class="meal-card">' +
-        '<img src="' + image + '" alt="' + title + ' görseli">' +
         '<div class="meal-card-body">' +
           '<span class="meal-label">' + title + "</span>" +
           "<h3>" + title + "</h3>" +
-          '<p class="meal-meta">' + meal.time + " · yak. " + meal.calories + " kcal</p>" +
+          '<p class="meal-meta">' + when + " · " + meal.calories + " kcal</p>" +
           '<ul class="meal-list">' + mealItems(meal.items) + "</ul>" +
         "</div>" +
       "</article>"
@@ -104,15 +114,15 @@
     if (!found) {
       mount.innerHTML =
         '<div class="soft-card empty-state">' +
-          "<p>Bu tarih için menü henüz eklenmedi. JSON veri kaynağına yeni günler eklendiğinde burada görünecek.</p>" +
+          "<p>Bu tarih için menü henüz eklenmedi. Yeni ay listesi gelince <code>data/meals.json</code> dosyasına o günleri eklemen yeterli.</p>" +
         "</div>";
       return;
     }
 
     mount.innerHTML =
       '<div class="menu-grid">' +
-        mealCard("Kahvaltı", found.breakfast, "breakfast") +
-        mealCard("Akşam Yemeği", found.dinner, "dinner") +
+        mealCard("Kahvaltı", found.breakfast, state.breakfastTime) +
+        mealCard("Akşam Yemeği", found.dinner, state.dinnerTime) +
       "</div>";
   }
 
@@ -129,6 +139,20 @@
   Kampus.fetchJSON("data/meals.json")
     .then(function (data) {
       state.meals = data.meals || [];
+      if (data.meta && data.meta.breakfastTime) state.breakfastTime = data.meta.breakfastTime;
+      if (data.meta && data.meta.dinnerTime) state.dinnerTime = data.meta.dinnerTime;
+      const notes = document.querySelector("[data-menu-notes]");
+      if (notes && data.meta && data.meta.notes) {
+        notes.innerHTML = data.meta.notes.map(function (line) {
+          return "<p>" + line + "</p>";
+        }).join("");
+      }
+      const todayIso = Kampus.toISODate(state.selected);
+      if (!mealByDate(todayIso) && state.meals.length) {
+        const first = Kampus.parseISODate(state.meals[0].date);
+        state.selected = first;
+        state.cursor = new Date(first.getFullYear(), first.getMonth(), 1);
+      }
       renderCalendar();
       renderMenu();
     })

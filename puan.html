@@ -30,6 +30,7 @@
         <a href="puan.html" class="active">Puan Hesaplama</a>
         <a href="otobus.html">Otobüsüm Nerede</a>
         <a href="ders-programi.html">Ders Programı</a>
+        <a href="camasirhane.html">Çamaşırhane</a>
         <a class="nav-cta" href="yemek.html">Bugünün menüsü</a>
       </nav>
     </div>
@@ -48,77 +49,109 @@
     <div class="container">
       <div class="grade-layout">
         <div>
-          <div class="soft-card" data-panel="target">
-            <h3>1 · Hedef harf için final</h3>
-            <p class="hint">Vize notun ve yüzdeler belli olsun; hedeflediğin harfi seç. Sistem finalden kaç alman gerektiğini hesaplar.</p>
-            <form data-target-form class="form-grid two" style="margin-top:16px">
-              <div class="field">
-                <label for="target-midterm">Vize notu</label>
-                <input id="target-midterm" type="number" min="0" max="100" step="0.1" value="70" required>
-              </div>
-              <div class="field">
-                <label for="target-letter">Hedef harf</label>
-                <select id="target-letter">
-                  <option>AA</option>
-                  <option selected>BA</option>
-                  <option>BB</option>
-                  <option>CB</option>
-                  <option>CC</option>
-                  <option>DC</option>
-                  <option>DD</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="target-mid-w">Vize ağırlığı (%)</label>
-                <input id="target-mid-w" type="number" min="0" max="100" value="40" required>
-              </div>
-              <div class="field">
-                <label for="target-fin-w">Final ağırlığı (%)</label>
-                <input id="target-fin-w" type="number" min="0" max="100" value="60" required>
-              </div>
+          <div class="scale-panel" data-panel="target">
+            <div class="scale-panel-head target-head">
+              <span class="feature-icon" style="margin:0"><i class="fa-solid fa-bullseye"></i></span>
               <div>
-                <button class="btn btn-primary" type="submit">Finali hesapla</button>
+                <h3>Hedef harf için final</h3>
+                <p>Vize notun ve yüzdeler belli olsun; hedeflediğin harfi seç. Sistem finalden kaç alman gerektiğini hesaplar.</p>
               </div>
-            </form>
-            <div class="result-card" data-target-result>
-              <p>Değerleri girip hesapla; sonuç burada görünür.</p>
+            </div>
+            <div class="avg-body">
+              <form data-target-form>
+                <div class="avg-score-grid">
+                  <div class="avg-score-card is-mid">
+                    <span class="avg-score-mark"><i class="fa-solid fa-pen"></i></span>
+                    <div class="field">
+                      <label for="target-midterm">Vize notu</label>
+                      <input id="target-midterm" type="number" min="0" max="100" step="0.1" value="70" required>
+                    </div>
+                  </div>
+                  <div class="avg-score-card is-goal">
+                    <span class="avg-score-mark"><i class="fa-solid fa-flag"></i></span>
+                    <div class="field">
+                      <label for="target-letter">Hedef harf</label>
+                      <select id="target-letter">
+                        <option>AA</option>
+                        <option selected>BA</option>
+                        <option>BB</option>
+                        <option>CB</option>
+                        <option>CC</option>
+                        <option>DC</option>
+                        <option>DD</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="avg-weight-grid">
+                  <div class="field">
+                    <label for="target-mid-w">Vize ağırlığı (%)</label>
+                    <input id="target-mid-w" type="number" min="0" max="100" value="40" required>
+                  </div>
+                  <div class="field">
+                    <label for="target-fin-w">Final ağırlığı (%)</label>
+                    <input id="target-fin-w" type="number" min="0" max="100" value="60" required>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Finali hesapla</button>
+              </form>
+              <div class="avg-result is-idle" data-target-result></div>
             </div>
           </div>
 
-          <div class="soft-card" data-panel="average" style="margin-top:16px">
-            <h3>2 · Ortalama ve harf notu</h3>
-            <p class="hint">Vize, final ve yüzdeler girildiğinde dönem sonu ortalaması ile düşen harf notu gösterilir.</p>
-            <form data-avg-form class="form-grid two" style="margin-top:16px">
-              <div class="field">
-                <label for="avg-midterm">Vize notu</label>
-                <input id="avg-midterm" type="number" min="0" max="100" step="0.1" value="72" required>
-              </div>
-              <div class="field">
-                <label for="avg-final">Final notu</label>
-                <input id="avg-final" type="number" min="0" max="100" step="0.1" value="81" required>
-              </div>
-              <div class="field">
-                <label for="avg-mid-w">Vize ağırlığı (%)</label>
-                <input id="avg-mid-w" type="number" min="0" max="100" value="40" required>
-              </div>
-              <div class="field">
-                <label for="avg-fin-w">Final ağırlığı (%)</label>
-                <input id="avg-fin-w" type="number" min="0" max="100" value="60" required>
-              </div>
+          <div class="scale-panel avg-panel" data-panel="average" style="margin-top:16px">
+            <div class="scale-panel-head avg-head">
+              <span class="feature-icon" style="margin:0"><i class="fa-solid fa-chart-pie"></i></span>
               <div>
-                <button class="btn btn-primary" type="submit">Ortalamayı hesapla</button>
+                <h3>Ortalama ve harf notu</h3>
+                <p>Vize, final ve yüzdeler girilince ortalama, harf ve katsayı birlikte görünür.</p>
               </div>
-            </form>
-            <div class="result-card" data-avg-result>
-              <p>Notları girip hesapla.</p>
+            </div>
+            <div class="avg-body">
+              <form data-avg-form>
+                <div class="avg-score-grid">
+                  <div class="avg-score-card is-mid">
+                    <span class="avg-score-mark"><i class="fa-solid fa-pen"></i></span>
+                    <div class="field">
+                      <label for="avg-midterm">Vize notu</label>
+                      <input id="avg-midterm" type="number" min="0" max="100" step="0.1" value="72" required>
+                    </div>
+                  </div>
+                  <div class="avg-score-card is-fin">
+                    <span class="avg-score-mark"><i class="fa-solid fa-file-pen"></i></span>
+                    <div class="field">
+                      <label for="avg-final">Final notu</label>
+                      <input id="avg-final" type="number" min="0" max="100" step="0.1" value="81" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="avg-weight-grid">
+                  <div class="field">
+                    <label for="avg-mid-w">Vize ağırlığı (%)</label>
+                    <input id="avg-mid-w" type="number" min="0" max="100" value="40" required>
+                  </div>
+                  <div class="field">
+                    <label for="avg-fin-w">Final ağırlığı (%)</label>
+                    <input id="avg-fin-w" type="number" min="0" max="100" value="60" required>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Ortalamayı hesapla</button>
+              </form>
+              <div class="avg-result is-idle" data-avg-result></div>
             </div>
           </div>
         </div>
 
-        <aside class="soft-card">
-          <h3>Harf notu baremleri</h3>
-          <p class="hint">Varsayılan: AA 90+, BA 85+, BB 80+. Dersin farklıysa alt sınırı değiştir.</p>
-          <div class="scale-grid" data-scale style="margin-top:14px"></div>
+        <aside class="scale-panel">
+          <div class="scale-panel-head">
+            <span class="feature-icon" style="margin:0"><i class="fa-solid fa-layer-group"></i></span>
+            <div>
+              <h3>Harf notu baremleri</h3>
+              <p>Her harfin alt sınırını değiştir; aralık otomatik güncellenir.</p>
+            </div>
+          </div>
+          <div class="scale-list" data-scale></div>
+          <p class="hint">AA 4.00 · BA 3.50 · BB 3.00 · CB 2.50 · CC 2.00 · DC 1.50 · DD 1.00</p>
         </aside>
       </div>
     </div>
@@ -137,6 +170,7 @@
           <p><a href="puan.html">Puan hesaplama</a></p>
           <p><a href="otobus.html">Otobüsüm nerede</a></p>
           <p><a href="ders-programi.html">Ders programı</a></p>
+          <p><a href="camasirhane.html">Çamaşırhane</a></p>
         </div>
         <div>
           <h4>Kampüs</h4>

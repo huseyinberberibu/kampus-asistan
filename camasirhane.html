@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ders Programı · Kampüs Asistan</title>
+  <title>Çamaşırhane · Kampüs Asistan</title>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css?v=8">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
@@ -29,8 +29,8 @@
         <a href="yemek.html">Yemek Listesi</a>
         <a href="puan.html">Puan Hesaplama</a>
         <a href="otobus.html">Otobüsüm Nerede</a>
-        <a href="ders-programi.html" class="active">Ders Programı</a>
-        <a href="camasirhane.html">Çamaşırhane</a>
+        <a href="ders-programi.html">Ders Programı</a>
+        <a href="camasirhane.html" class="active">Çamaşırhane</a>
         <a class="nav-cta" href="yemek.html">Bugünün menüsü</a>
       </nav>
     </div>
@@ -38,48 +38,35 @@
 
   <section class="page-hero">
     <div class="container">
-      <p class="kicker">Bilgisayar mühendisliği</p>
-      <h1>Ders <span>programı</span></h1>
-      <p class="breadcrumb"><a href="index.html">Ana sayfa</a> / Ders programı</p>
-      <p>Önce sınıfını seç, sonra güz veya bahar. Tablo 2025–2026 lisans programından; bir derse dokununca 14 haftalık özet açılır.</p>
+      <p class="kicker">Yurt çamaşırhane · IoT hazır mock</p>
+      <h1>Çamaşırhane <span>durumu</span></h1>
+      <p class="breadcrumb"><a href="index.html">Ana sayfa</a> / Çamaşırhane</p>
+      <p>20 çamaşır + 20 kurutma makinesi. Veri sahte JSON’dan gelir; sayfa her dakika yeniden çeker. ESP32 bağlanınca sadece istek adresini değiştirmen yeterli.</p>
     </div>
   </section>
 
-  <section class="section" data-schedule-page>
+  <section class="section" data-laundry-page>
     <div class="container">
-      <div class="schedule-controls">
-        <div>
-          <p class="control-label">Sınıfın</p>
-          <div class="tabs year-tabs" data-year-tabs></div>
-        </div>
-        <div>
-          <p class="control-label">Dönem</p>
-          <div class="tabs" data-sem-tabs></div>
-        </div>
-        <div>
-          <p class="control-label">Gün</p>
-          <div class="tabs day-tabs" data-day-tabs></div>
-        </div>
+      <div class="laundry-legend">
+        <span class="is-idle"><i class="fa-solid fa-check"></i> Müsait</span>
+        <span class="is-running"><i class="fa-solid fa-clock"></i> Çalışıyor</span>
+        <span class="is-done"><i class="fa-solid fa-bell"></i> Bitti · çamaşır içeride</span>
+        <span class="is-fault"><i class="fa-solid fa-ban"></i> Arızalı</span>
       </div>
-      <div data-table>
-        <div class="soft-card empty-state"><p>Program yükleniyor…</p></div>
+      <p class="laundry-meta" data-laundry-meta>Durum yükleniyor…</p>
+
+      <div class="tabs laundry-tabs" data-laundry-tabs>
+        <button type="button" data-tab="washer" class="active">Çamaşır makineleri</button>
+        <button type="button" data-tab="dryer">Kurutma makineleri</button>
       </div>
+
+      <div class="laundry-layout" data-laundry-board>
+        <div class="soft-card empty-state"><p>Makineler yükleniyor…</p></div>
+      </div>
+
+      <p class="hint" style="margin-top:16px">Mock kaynak: <code>data/laundry.json</code>. Gerçek sensör için <code>js/laundry.js</code> içindeki <code>fetchLaundryStatus()</code> URL’sini API ucuna çevir.</p>
     </div>
   </section>
-
-  <div class="modal-backdrop" data-modal hidden>
-    <div class="modal" role="dialog" aria-modal="true">
-      <div class="modal-head">
-        <div>
-          <h3 data-modal-title>Ders</h3>
-          <p class="hint" data-modal-meta></p>
-        </div>
-        <button class="icon-btn" type="button" data-modal-close aria-label="Kapat"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <p class="hint" data-week-note></p>
-      <ul class="week-list" data-weeks></ul>
-    </div>
-  </div>
 
   <footer class="site-footer">
     <div class="container">
@@ -110,6 +97,6 @@
   </footer>
 
   <script src="js/core.js"></script>
-  <script src="js/schedule.js?v=9"></script>
+  <script src="js/laundry.js"></script>
 </body>
 </html>

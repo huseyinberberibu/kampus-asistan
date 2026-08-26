@@ -1,399 +1,2145 @@
 {
   "meta": {
-    "source": "mock",
+    "source": "KYK aylık menü örneği (Haziran 2026)",
     "campus": "Gölköy Kampüs Yemekhanesi",
-    "note": "Görseller ve tam menü sonradan entegre edilecek. image alanı şimdilik placeholder."
+    "monthLabel": "Haziran 2026",
+    "breakfastTime": "07:30 – 12:30",
+    "dinnerTime": "16:00 – 23:00",
+    "howToUpdate": "Yeni ay gelince bu dosyadaki meals dizisine yeni günleri ekle. date alanı YYYY-MM-DD olsun. Eski ayı silebilir veya bırakabilirsin. Kaydedip GitHub'a gönderince canlı site güncellenir.",
+    "notes": [
+      "Siyah ve yeşil zeytin birlikte çıkar; öğrenciler birini seçer.",
+      "Çay ve bitki çayı birlikte çıkar; öğrenciler birini seçer.",
+      "Reçel, bal, tereyağı, tahin-pekmez gibi sürülerek tüketilenler dönüşümlü verilir."
+    ]
   },
   "meals": [
     {
-      "date": "2026-08-24",
+      "date": "2026-06-01",
       "breakfast": {
         "time": "07:30 – 09:30",
-        "calories": 620,
-        "image": "assets/img/breakfast.svg",
+        "calories": 737,
         "items": [
-          { "name": "Haşlanmış yumurta", "image": null },
-          { "name": "Beyaz peynir", "image": null },
-          { "name": "Siyah zeytin", "image": null },
-          { "name": "Domates / salatalık", "image": null },
-          { "name": "Bal – tereyağı", "image": null },
-          { "name": "Çay", "image": null }
+          {
+            "name": "Sucuklu yumurta",
+            "portion": "1 adet L yumurta + 25 g sucuk"
+          },
+          {
+            "name": "Dere otlu poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
         ]
       },
       "dinner": {
         "time": "17:00 – 19:30",
-        "calories": 890,
-        "image": "assets/img/dinner.svg",
+        "calories": 922,
         "items": [
-          { "name": "Mercimek çorbası", "image": null },
-          { "name": "Tavuk sote", "image": null },
-          { "name": "Pirinç pilavı", "image": null },
-          { "name": "Mevsim salata", "image": null },
-          { "name": "Ayran", "image": null }
+          {
+            "name": "Mercimek / tarhana çorba",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Tavuk kroket yemeği",
+            "portion": "120 g"
+          },
+          {
+            "name": "Salçalı spagetti",
+            "portion": "150 g"
+          },
+          {
+            "name": "Cacık",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
         ]
       }
     },
     {
-      "date": "2026-08-25",
+      "date": "2026-06-02",
       "breakfast": {
         "time": "07:30 – 09:30",
-        "calories": 640,
-        "image": "assets/img/breakfast.svg",
+        "calories": 780,
         "items": [
-          { "name": "Sucuklu yumurta", "image": null },
-          { "name": "Kaşar peynir", "image": null },
-          { "name": "Yeşil zeytin", "image": null },
-          { "name": "Simit", "image": null },
-          { "name": "Reçel", "image": null },
-          { "name": "Çay", "image": null }
-        ]
-      },
-      "dinner": {
-        "time": "17:00 – 19:30",
-        "calories": 920,
-        "image": "assets/img/dinner.svg",
-        "items": [
-          { "name": "Ezogelin çorba", "image": null },
-          { "name": "Kıymalı makarna", "image": null },
-          { "name": "Cacık", "image": null },
-          { "name": "Turşu", "image": null },
-          { "name": "Meyve (elma)", "image": null }
-        ]
-      }
-    },
-    {
-      "date": "2026-08-26",
-      "breakfast": {
-        "time": "07:30 – 09:30",
-        "calories": 610,
-        "image": "assets/img/breakfast.svg",
-        "items": [
-          { "name": "Omlet", "image": null },
-          { "name": "Lor peynir", "image": null },
-          { "name": "Siyah zeytin", "image": null },
-          { "name": "Bal", "image": null },
-          { "name": "Poğaça", "image": null },
-          { "name": "Süt", "image": null }
-        ]
-      },
-      "dinner": {
-        "time": "17:00 – 19:30",
-        "calories": 870,
-        "image": "assets/img/dinner.svg",
-        "items": [
-          { "name": "Yayla çorbası", "image": null },
-          { "name": "Izgara köfte", "image": null },
-          { "name": "Bulgur pilavı", "image": null },
-          { "name": "Yoğurt", "image": null },
-          { "name": "Komposto", "image": null }
-        ]
-      }
-    },
-    {
-      "date": "2026-08-27",
-      "breakfast": {
-        "time": "07:30 – 09:30",
-        "calories": 600,
-        "image": "assets/img/breakfast.svg",
-        "items": [
-          { "name": "Haşlanmış yumurta", "image": null },
-          { "name": "Beyaz peynir", "image": null },
-          { "name": "Tahin-pekmez", "image": null },
-          { "name": "Domates", "image": null },
-          { "name": "Ekmek", "image": null },
-          { "name": "Çay", "image": null }
-        ]
-      },
-      "dinner": {
-        "time": "17:00 – 19:30",
-        "calories": 910,
-        "image": "assets/img/dinner.svg",
-        "items": [
-          { "name": "Tarhana çorbası", "image": null },
-          { "name": "Fırın tavuk", "image": null },
-          { "name": "Patates püresi", "image": null },
-          { "name": "Salata", "image": null },
-          { "name": "Sütlaç", "image": null }
-        ]
-      }
-    },
-    {
-      "date": "2026-08-28",
-      "breakfast": {
-        "time": "07:30 – 09:30",
-        "calories": 655,
-        "image": "assets/img/breakfast.svg",
-        "items": [
-          { "name": "Menemen", "image": null },
-          { "name": "Kaşar", "image": null },
-          { "name": "Zeytin", "image": null },
-          { "name": "Tereyağı", "image": null },
-          { "name": "Simit", "image": null },
-          { "name": "Çay", "image": null }
+          {
+            "name": "Menemen",
+            "portion": "150 g"
+          },
+          {
+            "name": "Susamlı simit",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
         ]
       },
       "dinner": {
         "time": "17:00 – 19:30",
         "calories": 880,
-        "image": "assets/img/dinner.svg",
         "items": [
-          { "name": "Domates çorbası", "image": null },
-          { "name": "Kuru fasulye", "image": null },
-          { "name": "Pirinç pilavı", "image": null },
-          { "name": "Turşu", "image": null },
-          { "name": "Hoşaf", "image": null }
+          {
+            "name": "Ezogelin / yayla çorba",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Izgara köfte / tavuk sote",
+            "portion": "120 g"
+          },
+          {
+            "name": "Şehriyeli pirinç pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Çoban salata",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
         ]
       }
     },
     {
-      "date": "2026-08-29",
+      "date": "2026-06-03",
       "breakfast": {
         "time": "07:30 – 09:30",
-        "calories": 630,
-        "image": "assets/img/breakfast.svg",
+        "calories": 760,
         "items": [
-          { "name": "Sahanda yumurta", "image": null },
-          { "name": "Beyaz peynir", "image": null },
-          { "name": "Bal – kaymak", "image": null },
-          { "name": "Salatalık", "image": null },
-          { "name": "Poğaça", "image": null },
-          { "name": "Çay", "image": null }
-        ]
-      },
-      "dinner": {
-        "time": "17:00 – 19:30",
-        "calories": 940,
-        "image": "assets/img/dinner.svg",
-        "items": [
-          { "name": "Şehriye çorbası", "image": null },
-          { "name": "Et sote", "image": null },
-          { "name": "Erişte", "image": null },
-          { "name": "Cacık", "image": null },
-          { "name": "Meyve (armut)", "image": null }
-        ]
-      }
-    },
-    {
-      "date": "2026-08-30",
-      "breakfast": {
-        "time": "07:30 – 09:30",
-        "calories": 590,
-        "image": "assets/img/breakfast.svg",
-        "items": [
-          { "name": "Haşlanmış yumurta", "image": null },
-          { "name": "Lor", "image": null },
-          { "name": "Zeytin", "image": null },
-          { "name": "Reçel", "image": null },
-          { "name": "Ekmek", "image": null },
-          { "name": "Süt", "image": null }
-        ]
-      },
-      "dinner": {
-        "time": "17:00 – 19:30",
-        "calories": 900,
-        "image": "assets/img/dinner.svg",
-        "items": [
-          { "name": "Mercimek çorbası", "image": null },
-          { "name": "Mantı", "image": null },
-          { "name": "Yoğurt", "image": null },
-          { "name": "Salata", "image": null },
-          { "name": "Kek", "image": null }
-        ]
-      }
-    },
-    {
-      "date": "2026-08-31",
-      "breakfast": {
-        "time": "07:30 – 09:30",
-        "calories": 670,
-        "image": "assets/img/breakfast.svg",
-        "items": [
-          { "name": "Sucuklu yumurta", "image": null },
-          { "name": "Kaşar", "image": null },
-          { "name": "Domates", "image": null },
-          { "name": "Bal", "image": null },
-          { "name": "Simit", "image": null },
-          { "name": "Çay", "image": null }
-        ]
-      },
-      "dinner": {
-        "time": "17:00 – 19:30",
-        "calories": 930,
-        "image": "assets/img/dinner.svg",
-        "items": [
-          { "name": "Yayla çorbası", "image": null },
-          { "name": "Tavuk şinitzel", "image": null },
-          { "name": "Patates kızartması", "image": null },
-          { "name": "Mevsim salata", "image": null },
-          { "name": "Ayran", "image": null }
-        ]
-      }
-    },
-    {
-      "date": "2026-09-01",
-      "breakfast": {
-        "time": "07:30 – 09:30",
-        "calories": 615,
-        "image": "assets/img/breakfast.svg",
-        "items": [
-          { "name": "Omlet", "image": null },
-          { "name": "Beyaz peynir", "image": null },
-          { "name": "Zeytin", "image": null },
-          { "name": "Tahin-pekmez", "image": null },
-          { "name": "Poğaça", "image": null },
-          { "name": "Çay", "image": null }
-        ]
-      },
-      "dinner": {
-        "time": "17:00 – 19:30",
-        "calories": 860,
-        "image": "assets/img/dinner.svg",
-        "items": [
-          { "name": "Ezogelin çorba", "image": null },
-          { "name": "Nohut yemeği", "image": null },
-          { "name": "Bulgur pilavı", "image": null },
-          { "name": "Turşu", "image": null },
-          { "name": "Komposto", "image": null }
-        ]
-      }
-    },
-    {
-      "date": "2026-09-02",
-      "breakfast": {
-        "time": "07:30 – 09:30",
-        "calories": 625,
-        "image": "assets/img/breakfast.svg",
-        "items": [
-          { "name": "Haşlanmış yumurta", "image": null },
-          { "name": "Kaşar", "image": null },
-          { "name": "Siyah zeytin", "image": null },
-          { "name": "Reçel", "image": null },
-          { "name": "Ekmek", "image": null },
-          { "name": "Süt", "image": null }
+          {
+            "name": "Peynirli omlet",
+            "portion": "2 yumurta"
+          },
+          {
+            "name": "Sade açma",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
         ]
       },
       "dinner": {
         "time": "17:00 – 19:30",
         "calories": 950,
-        "image": "assets/img/dinner.svg",
         "items": [
-          { "name": "Tarhana çorbası", "image": null },
-          { "name": "Izgara tavuk", "image": null },
-          { "name": "Pirinç pilavı", "image": null },
-          { "name": "Cacık", "image": null },
-          { "name": "Sütlaç", "image": null }
+          {
+            "name": "Yayla çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Orman kebabı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Bulgur pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Mevsim salata",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
         ]
       }
     },
     {
-      "date": "2026-09-03",
+      "date": "2026-06-04",
       "breakfast": {
         "time": "07:30 – 09:30",
-        "calories": 640,
-        "image": "assets/img/breakfast.svg",
+        "calories": 646,
         "items": [
-          { "name": "Menemen", "image": null },
-          { "name": "Lor peynir", "image": null },
-          { "name": "Domates / salatalık", "image": null },
-          { "name": "Bal", "image": null },
-          { "name": "Simit", "image": null },
-          { "name": "Çay", "image": null }
+          {
+            "name": "Karışık pizza",
+            "portion": "150 g"
+          },
+          {
+            "name": "Haşlanmış yumurta",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
         ]
       },
       "dinner": {
         "time": "17:00 – 19:30",
-        "calories": 885,
-        "image": "assets/img/dinner.svg",
+        "calories": 900,
         "items": [
-          { "name": "Domates çorbası", "image": null },
-          { "name": "Karnıyarık", "image": null },
-          { "name": "Yoğurt", "image": null },
-          { "name": "Salata", "image": null },
-          { "name": "Meyve", "image": null }
+          {
+            "name": "Tarhana çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "İzmir köfte",
+            "portion": "140 g"
+          },
+          {
+            "name": "Makarna",
+            "portion": "150 g"
+          },
+          {
+            "name": "Yoğurt",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
         ]
       }
     },
     {
-      "date": "2026-09-04",
+      "date": "2026-06-05",
       "breakfast": {
         "time": "07:30 – 09:30",
-        "calories": 605,
-        "image": "assets/img/breakfast.svg",
+        "calories": 800,
         "items": [
-          { "name": "Sahanda yumurta", "image": null },
-          { "name": "Beyaz peynir", "image": null },
-          { "name": "Zeytin", "image": null },
-          { "name": "Tereyağı", "image": null },
-          { "name": "Poğaça", "image": null },
-          { "name": "Çay", "image": null }
-        ]
-      },
-      "dinner": {
-        "time": "17:00 – 19:30",
-        "calories": 915,
-        "image": "assets/img/dinner.svg",
-        "items": [
-          { "name": "Şehriye çorbası", "image": null },
-          { "name": "Etli nohut", "image": null },
-          { "name": "Pirinç pilavı", "image": null },
-          { "name": "Turşu", "image": null },
-          { "name": "Hoşaf", "image": null }
-        ]
-      }
-    },
-    {
-      "date": "2026-09-05",
-      "breakfast": {
-        "time": "07:30 – 09:30",
-        "calories": 650,
-        "image": "assets/img/breakfast.svg",
-        "items": [
-          { "name": "Sucuklu yumurta", "image": null },
-          { "name": "Kaşar", "image": null },
-          { "name": "Bal – kaymak", "image": null },
-          { "name": "Salatalık", "image": null },
-          { "name": "Simit", "image": null },
-          { "name": "Çay", "image": null }
-        ]
-      },
-      "dinner": {
-        "time": "17:00 – 19:30",
-        "calories": 890,
-        "image": "assets/img/dinner.svg",
-        "items": [
-          { "name": "Mercimek çorbası", "image": null },
-          { "name": "Tavuk sote", "image": null },
-          { "name": "Bulgur pilavı", "image": null },
-          { "name": "Mevsim salata", "image": null },
-          { "name": "Ayran", "image": null }
-        ]
-      }
-    },
-    {
-      "date": "2026-09-06",
-      "breakfast": {
-        "time": "07:30 – 09:30",
-        "calories": 595,
-        "image": "assets/img/breakfast.svg",
-        "items": [
-          { "name": "Omlet", "image": null },
-          { "name": "Beyaz peynir", "image": null },
-          { "name": "Zeytin", "image": null },
-          { "name": "Reçel", "image": null },
-          { "name": "Ekmek", "image": null },
-          { "name": "Süt", "image": null }
+          {
+            "name": "Sahanda yumurta",
+            "portion": "2 adet"
+          },
+          {
+            "name": "Patatesli poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
         ]
       },
       "dinner": {
         "time": "17:00 – 19:30",
         "calories": 870,
-        "image": "assets/img/dinner.svg",
         "items": [
-          { "name": "Yayla çorbası", "image": null },
-          { "name": "Kıymalı makarna", "image": null },
-          { "name": "Cacık", "image": null },
-          { "name": "Salata", "image": null },
-          { "name": "Kek", "image": null }
+          {
+            "name": "Domates çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Fırın tavuk",
+            "portion": "140 g"
+          },
+          {
+            "name": "Patates püresi",
+            "portion": "150 g"
+          },
+          {
+            "name": "Meyve",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-06",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 820,
+        "items": [
+          {
+            "name": "Patates kızartması",
+            "portion": "120 g"
+          },
+          {
+            "name": "Haşlanmış yumurta",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 910,
+        "items": [
+          {
+            "name": "Şehriye çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Kıymalı nohut",
+            "portion": "150 g"
+          },
+          {
+            "name": "Pirinç pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Turşu",
+            "portion": "50 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-07",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 700,
+        "items": [
+          {
+            "name": "Kaşarlı tost / yumurta",
+            "portion": "1 porsiyon"
+          },
+          {
+            "name": "Sade poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 890,
+        "items": [
+          {
+            "name": "Mercimek çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Mantı",
+            "portion": "180 g"
+          },
+          {
+            "name": "Cacık",
+            "portion": "100 g"
+          },
+          {
+            "name": "Komposto",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-08",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 737,
+        "items": [
+          {
+            "name": "Sucuklu yumurta",
+            "portion": "1 adet L yumurta + 25 g sucuk"
+          },
+          {
+            "name": "Dere otlu poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 922,
+        "items": [
+          {
+            "name": "Mercimek / tarhana çorba",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Tavuk kroket yemeği",
+            "portion": "120 g"
+          },
+          {
+            "name": "Salçalı spagetti",
+            "portion": "150 g"
+          },
+          {
+            "name": "Cacık",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 780,
+        "items": [
+          {
+            "name": "Menemen",
+            "portion": "150 g"
+          },
+          {
+            "name": "Susamlı simit",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 880,
+        "items": [
+          {
+            "name": "Ezogelin / yayla çorba",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Izgara köfte / tavuk sote",
+            "portion": "120 g"
+          },
+          {
+            "name": "Şehriyeli pirinç pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Çoban salata",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 760,
+        "items": [
+          {
+            "name": "Peynirli omlet",
+            "portion": "2 yumurta"
+          },
+          {
+            "name": "Sade açma",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 950,
+        "items": [
+          {
+            "name": "Yayla çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Orman kebabı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Bulgur pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Mevsim salata",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 646,
+        "items": [
+          {
+            "name": "Karışık pizza",
+            "portion": "150 g"
+          },
+          {
+            "name": "Haşlanmış yumurta",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 900,
+        "items": [
+          {
+            "name": "Tarhana çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "İzmir köfte",
+            "portion": "140 g"
+          },
+          {
+            "name": "Makarna",
+            "portion": "150 g"
+          },
+          {
+            "name": "Yoğurt",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 800,
+        "items": [
+          {
+            "name": "Sahanda yumurta",
+            "portion": "2 adet"
+          },
+          {
+            "name": "Patatesli poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 870,
+        "items": [
+          {
+            "name": "Domates çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Fırın tavuk",
+            "portion": "140 g"
+          },
+          {
+            "name": "Patates püresi",
+            "portion": "150 g"
+          },
+          {
+            "name": "Meyve",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-13",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 820,
+        "items": [
+          {
+            "name": "Patates kızartması",
+            "portion": "120 g"
+          },
+          {
+            "name": "Haşlanmış yumurta",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 910,
+        "items": [
+          {
+            "name": "Şehriye çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Kıymalı nohut",
+            "portion": "150 g"
+          },
+          {
+            "name": "Pirinç pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Turşu",
+            "portion": "50 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-14",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 700,
+        "items": [
+          {
+            "name": "Kaşarlı tost / yumurta",
+            "portion": "1 porsiyon"
+          },
+          {
+            "name": "Sade poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 890,
+        "items": [
+          {
+            "name": "Mercimek çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Mantı",
+            "portion": "180 g"
+          },
+          {
+            "name": "Cacık",
+            "portion": "100 g"
+          },
+          {
+            "name": "Komposto",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 737,
+        "items": [
+          {
+            "name": "Sucuklu yumurta",
+            "portion": "1 adet L yumurta + 25 g sucuk"
+          },
+          {
+            "name": "Dere otlu poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 922,
+        "items": [
+          {
+            "name": "Mercimek / tarhana çorba",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Tavuk kroket yemeği",
+            "portion": "120 g"
+          },
+          {
+            "name": "Salçalı spagetti",
+            "portion": "150 g"
+          },
+          {
+            "name": "Cacık",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 780,
+        "items": [
+          {
+            "name": "Menemen",
+            "portion": "150 g"
+          },
+          {
+            "name": "Susamlı simit",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 880,
+        "items": [
+          {
+            "name": "Ezogelin / yayla çorba",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Izgara köfte / tavuk sote",
+            "portion": "120 g"
+          },
+          {
+            "name": "Şehriyeli pirinç pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Çoban salata",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 760,
+        "items": [
+          {
+            "name": "Peynirli omlet",
+            "portion": "2 yumurta"
+          },
+          {
+            "name": "Sade açma",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 950,
+        "items": [
+          {
+            "name": "Yayla çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Orman kebabı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Bulgur pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Mevsim salata",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 646,
+        "items": [
+          {
+            "name": "Karışık pizza",
+            "portion": "150 g"
+          },
+          {
+            "name": "Haşlanmış yumurta",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 900,
+        "items": [
+          {
+            "name": "Tarhana çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "İzmir köfte",
+            "portion": "140 g"
+          },
+          {
+            "name": "Makarna",
+            "portion": "150 g"
+          },
+          {
+            "name": "Yoğurt",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-19",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 800,
+        "items": [
+          {
+            "name": "Sahanda yumurta",
+            "portion": "2 adet"
+          },
+          {
+            "name": "Patatesli poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 870,
+        "items": [
+          {
+            "name": "Domates çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Fırın tavuk",
+            "portion": "140 g"
+          },
+          {
+            "name": "Patates püresi",
+            "portion": "150 g"
+          },
+          {
+            "name": "Meyve",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-20",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 820,
+        "items": [
+          {
+            "name": "Patates kızartması",
+            "portion": "120 g"
+          },
+          {
+            "name": "Haşlanmış yumurta",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 910,
+        "items": [
+          {
+            "name": "Şehriye çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Kıymalı nohut",
+            "portion": "150 g"
+          },
+          {
+            "name": "Pirinç pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Turşu",
+            "portion": "50 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-21",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 700,
+        "items": [
+          {
+            "name": "Kaşarlı tost / yumurta",
+            "portion": "1 porsiyon"
+          },
+          {
+            "name": "Sade poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 890,
+        "items": [
+          {
+            "name": "Mercimek çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Mantı",
+            "portion": "180 g"
+          },
+          {
+            "name": "Cacık",
+            "portion": "100 g"
+          },
+          {
+            "name": "Komposto",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-22",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 737,
+        "items": [
+          {
+            "name": "Sucuklu yumurta",
+            "portion": "1 adet L yumurta + 25 g sucuk"
+          },
+          {
+            "name": "Dere otlu poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 922,
+        "items": [
+          {
+            "name": "Mercimek / tarhana çorba",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Tavuk kroket yemeği",
+            "portion": "120 g"
+          },
+          {
+            "name": "Salçalı spagetti",
+            "portion": "150 g"
+          },
+          {
+            "name": "Cacık",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-23",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 780,
+        "items": [
+          {
+            "name": "Menemen",
+            "portion": "150 g"
+          },
+          {
+            "name": "Susamlı simit",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 880,
+        "items": [
+          {
+            "name": "Ezogelin / yayla çorba",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Izgara köfte / tavuk sote",
+            "portion": "120 g"
+          },
+          {
+            "name": "Şehriyeli pirinç pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Çoban salata",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-24",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 760,
+        "items": [
+          {
+            "name": "Peynirli omlet",
+            "portion": "2 yumurta"
+          },
+          {
+            "name": "Sade açma",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 950,
+        "items": [
+          {
+            "name": "Yayla çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Orman kebabı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Bulgur pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Mevsim salata",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-25",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 646,
+        "items": [
+          {
+            "name": "Karışık pizza",
+            "portion": "150 g"
+          },
+          {
+            "name": "Haşlanmış yumurta",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 900,
+        "items": [
+          {
+            "name": "Tarhana çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "İzmir köfte",
+            "portion": "140 g"
+          },
+          {
+            "name": "Makarna",
+            "portion": "150 g"
+          },
+          {
+            "name": "Yoğurt",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-26",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 800,
+        "items": [
+          {
+            "name": "Sahanda yumurta",
+            "portion": "2 adet"
+          },
+          {
+            "name": "Patatesli poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 870,
+        "items": [
+          {
+            "name": "Domates çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Fırın tavuk",
+            "portion": "140 g"
+          },
+          {
+            "name": "Patates püresi",
+            "portion": "150 g"
+          },
+          {
+            "name": "Meyve",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-27",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 820,
+        "items": [
+          {
+            "name": "Patates kızartması",
+            "portion": "120 g"
+          },
+          {
+            "name": "Haşlanmış yumurta",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 910,
+        "items": [
+          {
+            "name": "Şehriye çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Kıymalı nohut",
+            "portion": "150 g"
+          },
+          {
+            "name": "Pirinç pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Turşu",
+            "portion": "50 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 700,
+        "items": [
+          {
+            "name": "Kaşarlı tost / yumurta",
+            "portion": "1 porsiyon"
+          },
+          {
+            "name": "Sade poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 890,
+        "items": [
+          {
+            "name": "Mercimek çorbası",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Mantı",
+            "portion": "180 g"
+          },
+          {
+            "name": "Cacık",
+            "portion": "100 g"
+          },
+          {
+            "name": "Komposto",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 737,
+        "items": [
+          {
+            "name": "Sucuklu yumurta",
+            "portion": "1 adet L yumurta + 25 g sucuk"
+          },
+          {
+            "name": "Dere otlu poğaça",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 922,
+        "items": [
+          {
+            "name": "Mercimek / tarhana çorba",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Tavuk kroket yemeği",
+            "portion": "120 g"
+          },
+          {
+            "name": "Salçalı spagetti",
+            "portion": "150 g"
+          },
+          {
+            "name": "Cacık",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "breakfast": {
+        "time": "07:30 – 09:30",
+        "calories": 648,
+        "items": [
+          {
+            "name": "Patates kavurması / patates salatası",
+            "portion": "150 g"
+          },
+          {
+            "name": "Haşlanmış yumurta",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Yöresel peynir",
+            "portion": "40 g"
+          },
+          {
+            "name": "Siyah / yeşil zeytin",
+            "portion": "30 g"
+          },
+          {
+            "name": "Mevsim sebzeleri (söğüş)",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          },
+          {
+            "name": "Çay / bitki çayı",
+            "portion": "sınırsız"
+          }
+        ]
+      },
+      "dinner": {
+        "time": "17:00 – 19:30",
+        "calories": 880,
+        "items": [
+          {
+            "name": "Ezogelin / yayla çorba",
+            "portion": "1 kase"
+          },
+          {
+            "name": "Izgara köfte / tavuk sote",
+            "portion": "120 g"
+          },
+          {
+            "name": "Şehriyeli pirinç pilavı",
+            "portion": "150 g"
+          },
+          {
+            "name": "Çoban salata",
+            "portion": "100 g"
+          },
+          {
+            "name": "Çeyrek ekmek",
+            "portion": "1 adet"
+          },
+          {
+            "name": "Su",
+            "portion": "500 ml"
+          }
         ]
       }
     }
