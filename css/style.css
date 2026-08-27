@@ -51,6 +51,15 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   max-width: 100%;
+  padding-top: var(--header-h);
+}
+
+body.scroll-locked {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 img { max-width: 100%; display: block; }
@@ -75,8 +84,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header — template: dark navy bar, uppercase nav, pill CTA */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
   background: var(--navy-900);
   box-shadow: 0 2px 16px rgba(7, 17, 31, 0.25);
@@ -148,15 +159,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-nav {
   position: fixed;
-  inset: var(--header-h) 0 auto 0;
+  top: var(--header-h);
+  left: 0;
+  right: 0;
   background: var(--navy-800);
   padding: 12px 16px 20px;
   display: none;
   flex-direction: column;
   gap: 4px;
-  z-index: 40;
-  max-height: calc(100vh - var(--header-h));
+  z-index: 60;
+  max-height: calc(100dvh - var(--header-h));
   overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   box-shadow: 0 16px 32px rgba(7, 17, 31, 0.28);
 }
 
@@ -1339,8 +1354,10 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(7, 17, 31, 0.55);
   z-index: 80;
   display: none;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  padding: 16px;
+  overscroll-behavior: none;
 }
 
 .modal-backdrop.open { display: flex; }
@@ -1348,10 +1365,13 @@ h1, h2, h3, h4, h5, h6 {
 .modal {
   background: #fff;
   width: min(640px, 100%);
-  max-height: 86vh;
-  overflow: auto;
-  border-radius: 20px 20px 0 0;
-  padding: 22px 20px 28px;
+  max-height: min(86dvh, calc(100% - 8px));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--radius);
+  padding: 22px 20px 8px;
+  overscroll-behavior: contain;
 }
 
 .modal-head {
@@ -1359,7 +1379,22 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: flex-start;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.modal > .hint {
+  flex-shrink: 0;
+  margin-bottom: 12px;
+}
+
+.week-list {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  flex: 1;
+  min-height: 0;
+  padding-bottom: 16px;
 }
 
 .week-list li {
@@ -1602,11 +1637,6 @@ h1, h2, h3, h4, h5, h6 {
   .form-grid.two { grid-template-columns: 1fr 1fr; }
   .today-preview { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; }
-  .modal {
-    border-radius: var(--radius);
-    margin-bottom: 6vh;
-  }
-  .modal-backdrop { align-items: center; }
 }
 
 @media (min-width: 900px) {

@@ -1,17 +1,27 @@
 (function () {
   const nav = document.querySelector(".site-nav");
   const toggle = document.querySelector(".nav-toggle");
+
+  function setNavOpen(open) {
+    if (!nav || !toggle) return;
+    nav.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      if (open) Kampus.lockScroll();
+      else Kampus.unlockScroll();
+    }
+  }
+
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
-      nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", nav.classList.contains("open") ? "true" : "false");
+      setNavOpen(!nav.classList.contains("open"));
     });
   }
 
   document.addEventListener("click", function (event) {
     if (!nav || !nav.classList.contains("open")) return;
     if (nav.contains(event.target) || (toggle && toggle.contains(event.target))) return;
-    nav.classList.remove("open");
+    setNavOpen(false);
   });
 })();
 
@@ -60,5 +70,26 @@ const Kampus = {
   minutesAway: function (km, speedKmh) {
     if (!speedKmh) speedKmh = 28;
     return Math.max(1, Math.round((km / speedKmh) * 60));
+  },
+
+  _scrollLocks: 0,
+  _scrollY: 0,
+
+  lockScroll: function () {
+    this._scrollLocks += 1;
+    if (this._scrollLocks !== 1) return;
+    this._scrollY = window.scrollY || window.pageYOffset;
+    document.body.classList.add("scroll-locked");
+    document.body.style.top = "-" + this._scrollY + "px";
+    document.documentElement.style.overflow = "hidden";
+  },
+
+  unlockScroll: function () {
+    this._scrollLocks = Math.max(0, this._scrollLocks - 1);
+    if (this._scrollLocks !== 0) return;
+    document.body.classList.remove("scroll-locked");
+    document.body.style.top = "";
+    document.documentElement.style.overflow = "";
+    window.scrollTo(0, this._scrollY || 0);
   }
 };

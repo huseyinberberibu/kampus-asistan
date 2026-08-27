@@ -199,6 +199,14 @@
 
     backdrop.classList.add("open");
     backdrop.removeAttribute("hidden");
+    Kampus.lockScroll();
+  }
+
+  function closeModal() {
+    const modal = document.querySelector("[data-modal]");
+    modal.classList.remove("open");
+    modal.setAttribute("hidden", "");
+    Kampus.unlockScroll();
   }
 
   function render() {
@@ -214,16 +222,9 @@
   if (wideWeek.addEventListener) wideWeek.addEventListener("change", onWeekWidthChange);
   else if (wideWeek.addListener) wideWeek.addListener(onWeekWidthChange);
 
-  document.querySelector("[data-modal-close]").addEventListener("click", function () {
-    const modal = document.querySelector("[data-modal]");
-    modal.classList.remove("open");
-    modal.setAttribute("hidden", "");
-  });
+  document.querySelector("[data-modal-close]").addEventListener("click", closeModal);
   document.querySelector("[data-modal]").addEventListener("click", function (event) {
-    if (event.target === event.currentTarget) {
-      event.currentTarget.classList.remove("open");
-      event.currentTarget.setAttribute("hidden", "");
-    }
+    if (event.target === event.currentTarget) closeModal();
   });
 
   Kampus.fetchJSON("data/schedule.json?v=2025-26-days")
