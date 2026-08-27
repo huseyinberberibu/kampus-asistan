@@ -1,26 +1,11 @@
 (function () {
   const nav = document.querySelector(".site-nav");
   const toggle = document.querySelector(".nav-toggle");
-  const bar = toggle ? toggle.closest(".header-bar") : null;
-  const header = document.querySelector(".site-header");
-  const mobileNav = window.matchMedia("(max-width: 767px)");
-
-  function placeNav(open) {
-    if (!nav || !bar) return;
-    if (open && mobileNav.matches) {
-      nav.style.top = (window.scrollY + (header ? header.offsetHeight : 78)) + "px";
-      document.body.appendChild(nav);
-    } else {
-      nav.style.top = "";
-      if (nav.parentElement !== bar) bar.appendChild(nav);
-    }
-  }
 
   function setNavOpen(open) {
     if (!nav || !toggle) return;
     nav.classList.toggle("open", open);
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    placeNav(open);
   }
 
   if (toggle && nav) {
@@ -34,12 +19,6 @@
     if (nav.contains(event.target) || (toggle && toggle.contains(event.target))) return;
     setNavOpen(false);
   });
-
-  if (mobileNav.addEventListener) {
-    mobileNav.addEventListener("change", function () {
-      if (!mobileNav.matches) setNavOpen(false);
-    });
-  }
 })();
 
 const Kampus = {
