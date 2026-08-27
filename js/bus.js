@@ -20,7 +20,7 @@
           function (err) {
             resolve({ ok: false, reason: err && err.code === 1 ? "denied" : "unavailable" });
           },
-          { enableHighAccuracy: true, timeout: 8000, maximumAge: 15000 }
+          { enableHighAccuracy: false, timeout: 15000, maximumAge: 120000 }
         );
       });
     }
@@ -155,7 +155,7 @@
       if (!origin) {
         eta.innerHTML = "<p>Konum veya durak seçilmediği için tahmini süre hesaplanamıyor.</p>";
       } else if (!nearest) {
-        eta.innerHTML = "<p>Bu hatta aktif sahte araç bulunamadı.</p>";
+        eta.innerHTML = "<p>Bu hatta şu an görünen otobüs yok.</p>";
       } else {
         eta.innerHTML =
           '<div><p class="meal-meta" style="margin:0">En yakın otobüs · ' + nearest.bus.plate + "</p>" +
@@ -206,21 +206,31 @@
 
     paintStatus: function (loc) {
       const banner = document.querySelector("[data-geo-banner]");
+      const askBtn = '<button type="button" class="btn btn-primary" data-ask-geo>Konumumu kullan</button>';
       if (loc.ok) {
         banner.className = "fallback-banner ok";
         banner.innerHTML = "<div><strong>Konum alındı.</strong> Otobüs mesafesi konumuna göre hesaplanıyor. İstersen yine de durak seçebilirsin.</div>";
       } else if (loc.reason === "pending") {
         banner.className = "fallback-banner";
-        banner.innerHTML = "<div><strong>Konum izni isteniyor.</strong> İzin vermezsen veya konum kapalıysa aşağıdaki durak listesinden beklediğin durağı seç.</div>";
+        banner.innerHTML = "<div><strong>Konum için bir kez dokunman gerekir.</strong> İzin vermezsen aşağıdaki duraktan devam edebilirsin.</div>" + askBtn;
       } else {
         const why = loc.reason === "denied"
-          ? "Konum izni verilmedi."
+          ? "Konum izni verilmedi. Telefonda tarayıcı ayarlarından konum iznini açman gerekebilir."
           : loc.reason === "unsupported"
-            ? "Tarayıcı konum API'sini desteklemiyor."
-            : "Konum alınamadı.";
+            ? "Tarayıcı konum özelliğini desteklemiyor."
+            : "Konum alınamadı. Tekrar dene veya durak seç.";
         banner.className = "fallback-banner";
-        banner.innerHTML = "<div><strong>" + why + "</strong> Aşağıdan beklediğin durağı seç; tahmini süre o durağa göre hesaplanır.</div>";
+        banner.innerHTML = "<div><strong>" + why + "</strong></div>" + askBtn;
       }
+    },
+
+    askLocation: function () {
+      App.paintStatus({ ok: false, reason: "pending" });
+      LocationService.getPosition().then(function (loc) {
+        App.paintStatus(loc);
+        if (loc.ok) App.user = { lat: loc.lat, lng: loc.lng };
+        App.render();
+      });
     },
 
     fillSelects: function () {
@@ -261,7 +271,7 @@
 
       const mode = BusDataService.mode();
       document.querySelector("[data-mode-label]").textContent =
-        mode === "schedule" ? "Mod: statik hareket saatleri" : "Mod: canlı (mock) konum";
+        mode === "schedule" ? "Mod: hareket saatleri" : "Mod: canlı konum";
 
       if (mode === "schedule") ScheduleView.render(ctx);
       else LiveView.render(ctx);
@@ -278,10 +288,9 @@
       App.render();
       App.timer = setInterval(App.render, BusDataService.data.config.refreshMs);
 
-      const loc = await LocationService.getPosition();
-      App.paintStatus(loc);
-      if (loc.ok) App.user = { lat: loc.lat, lng: loc.lng };
-      App.render();
+      document.querySelector("[data-geo-banner]").addEventListener("click", function (event) {
+        if (event.target.closest("[data-ask-geo]")) App.askLocation();
+      });
     }
   };
 
@@ -292,7 +301,6 @@
     const hours = route.schedule[todayKey] || [];
     mount.innerHTML =
       "<h3>Hat " + route.code + " · Kampüs kalkış saatleri</h3>" +
-      "<p class=\"hint\">Canlı API bulunamazsa `data/bus.json` içindeki <code>meta.mode</code> değerini <code>schedule</code> yapman yeterli. Bu tablo aynı veriden üretilir.</p>" +
       '<div class="chip-row" style="margin-top:12px">' +
         (hours.length ? hours.map(function (h) { return '<span class="chip">' + h + "</span>"; }).join("") : "<p>Bugün sefer yok.</p>") +
       "</div>";

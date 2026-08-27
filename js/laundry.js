@@ -153,7 +153,7 @@
     })
     .catch(function () {
       page.querySelector("[data-laundry-board]").innerHTML =
-        '<div class="soft-card empty-state"><p>Çamaşırhane verisi yüklenemedi. <code>data/laundry.json</code> dosyasını kontrol et.</p></div>';
+        '<div class="soft-card empty-state"><p>Çamaşırhane verisi şu an yüklenemedi.</p></div>';
     });
 
   setInterval(function () {

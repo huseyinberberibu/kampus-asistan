@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=9">
 </head>
 <body>
   <header class="site-header">
@@ -41,7 +41,7 @@
       <p class="kicker">Gölköy yemekhane</p>
       <h1>Yurt <span>yemek listesi</span></h1>
       <p class="breadcrumb"><a href="index.html">Ana sayfa</a> / Yemek listesi</p>
-      <p>Tarih seç; kahvaltı solda, akşam yemeği sağda. Mobilde kartlar alt alta iner. Görseller şimdilik yok — liste gönderdiğin KYK tablosu gibi yazılı.</p>
+      <p>Tarih seç; kahvaltı solda, akşam yemeği sağda. Mobilde kartlar alt alta iner.</p>
     </div>
   </section>
 
@@ -64,13 +64,7 @@
         <div class="soft-card empty-state"><p>Menü yükleniyor…</p></div>
       </div>
 
-      <div class="soft-card" style="margin-top:20px" data-menu-notes></div>
-
-      <div class="soft-card" style="margin-top:16px">
-        <h3>Sonraki ay nasıl güncellenir?</h3>
-        <p class="hint">Yeni liste eline geçince Cursor’da <code>data/meals.json</code> dosyasını aç. Her gün bir kayıt:</p>
-        <p class="hint"><code>"date": "2026-07-01"</code> (yıl-ay-gün), altında <code>breakfast</code> ve <code>dinner</code>. Yeni ayı alta ekleyebilir, eski ayı silebilirsin. Kaydettikten sonra GitHub’a gönderirsen canlı site kendiliğinden güncellenir. İstersen fotoğrafı sohbete atman da yeterli, listeyi ben işlerim.</p>
-      </div>
+      <div class="soft-card" style="margin-top:20px" data-menu-notes hidden></div>
     </div>
   </section>
 
@@ -97,7 +91,6 @@
       </div>
       <div class="footer-bottom">
         <p>© 2026 Kampüs Asistan</p>
-        <p>Örnek / mock veri ile çalışır</p>
       </div>
     </div>
   </footer>

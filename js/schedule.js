@@ -191,7 +191,7 @@
 
     if (!inTerm) {
       document.querySelector("[data-week-note]").textContent =
-        "Dönem henüz başlamadı veya bitti. Haftalık konular ders adına göre hazırlanmış örnek izlencedir; resmi müfredat gelince güncellenir.";
+        "Dönem henüz başlamadı veya bitti.";
     } else {
       document.querySelector("[data-week-note]").textContent =
         "Güncel hafta: " + (week + 1) + " / " + semester.weekCount + " (başlangıç " + semester.weekStart + ")";

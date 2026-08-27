@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=9">
 </head>
 <body>
   <header class="site-header">
@@ -41,7 +41,7 @@
     <div class="container">
       <p class="kicker">Bilgisayar mühendisliği · yurt asistanı</p>
       <h1>Yurt hayatın, <span>tek ekranda</span></h1>
-      <p>Yemek listesi, harf notu hesabı, Bolu otobüs takibi, haftalık ders programı ve çamaşırhane durumu. Sade, mobil uyumlu ve veri kaynağı JSON olduğu için sonra kolayca güncellenir.</p>
+      <p>Yemek listesi, harf notu hesabı, Bolu otobüs takibi, haftalık ders programı ve çamaşırhane durumu. Hepsi tek yerde, telefonda da rahat kullanılır.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="yemek.html"><i class="fa-solid fa-utensils"></i> Yemek listesi</a>
         <a class="btn btn-ghost" href="puan.html"><i class="fa-solid fa-calculator"></i> Puan hesaplama</a>
@@ -72,7 +72,7 @@
         <a class="feature-card" href="otobus.html">
           <div class="feature-icon"><i class="fa-solid fa-bus"></i></div>
           <h3>Otobüsüm nerede</h3>
-          <p>Bolu hatları için mock konum ve tahmini varış. İleride tabloya dönüşebilir.</p>
+          <p>Bolu hatlarında tahmini varış ve kampüs kalkış saatleri.</p>
         </a>
         <a class="feature-card" href="ders-programi.html">
           <div class="feature-icon"><i class="fa-solid fa-table"></i></div>
@@ -82,7 +82,7 @@
         <a class="feature-card" href="camasirhane.html">
           <div class="feature-icon"><i class="fa-solid fa-soap"></i></div>
           <h3>Çamaşırhane durumu</h3>
-          <p>40 makinenin müsait / çalışıyor / bitti / arızalı hali. IoT’ye hazır mock JSON.</p>
+          <p>40 makinenin müsait, çalışıyor, bitti veya arızalı hali.</p>
         </a>
       </div>
     </div>
@@ -93,11 +93,6 @@
       <div class="soft-card" data-home-menu>
         <h3>Bugünün yemeği</h3>
         <p>Yükleniyor…</p>
-      </div>
-      <div class="soft-card">
-        <h3>Hızlı not</h3>
-        <p>Veriler <code>data/</code> klasöründeki JSON dosyalarından okunuyor. Menü görselleri, gerçek otobüs API’si ve kesin müfredat sonradan eklenecek.</p>
-        <p class="hint">Canlı otobüs API’si bulunamazsa <code>data/bus.json</code> içinde <code>meta.mode</code> değerini <code>schedule</code> yapman yeterli.</p>
       </div>
     </div>
   </section>
@@ -125,7 +120,6 @@
       </div>
       <div class="footer-bottom">
         <p>© 2026 Kampüs Asistan</p>
-        <p>Örnek / mock veri ile çalışır</p>
       </div>
     </div>
   </footer>

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=9">
 </head>
 <body>
   <header class="site-header">
@@ -38,10 +38,10 @@
 
   <section class="page-hero">
     <div class="container">
-      <p class="kicker">Yurt çamaşırhane · IoT hazır mock</p>
+      <p class="kicker">Yurt çamaşırhane</p>
       <h1>Çamaşırhane <span>durumu</span></h1>
       <p class="breadcrumb"><a href="index.html">Ana sayfa</a> / Çamaşırhane</p>
-      <p>20 çamaşır + 20 kurutma makinesi. Veri sahte JSON’dan gelir; sayfa her dakika yeniden çeker. ESP32 bağlanınca sadece istek adresini değiştirmen yeterli.</p>
+      <p>20 çamaşır ve 20 kurutma makinesi. Durum her dakika yenilenir.</p>
     </div>
   </section>
 
@@ -63,8 +63,6 @@
       <div class="laundry-layout" data-laundry-board>
         <div class="soft-card empty-state"><p>Makineler yükleniyor…</p></div>
       </div>
-
-      <p class="hint" style="margin-top:16px">Mock kaynak: <code>data/laundry.json</code>. Gerçek sensör için <code>js/laundry.js</code> içindeki <code>fetchLaundryStatus()</code> URL’sini API ucuna çevir.</p>
     </div>
   </section>
 
@@ -91,7 +89,6 @@
       </div>
       <div class="footer-bottom">
         <p>© 2026 Kampüs Asistan</p>
-        <p>Örnek / mock veri ile çalışır</p>
       </div>
     </div>
   </footer>

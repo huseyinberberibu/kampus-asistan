@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=9">
 </head>
 <body>
   <header class="site-header">
@@ -38,17 +38,18 @@
 
   <section class="page-hero">
     <div class="container">
-      <p class="kicker">Bolu ulaşım · mock arayüz</p>
+      <p class="kicker">Bolu ulaşım</p>
       <h1>Otobüsüm <span>nerede</span></h1>
       <p class="breadcrumb"><a href="index.html">Ana sayfa</a> / Otobüsüm nerede</p>
-      <p>Canlı API yok: hatlar, duraklar ve araç koordinatları sahte JSON. Konum izni olmazsa durak seçerek devam edebilirsin.</p>
+      <p>Hat seç, tahmini varışı gör. Konum izni olmazsa duraktan devam edebilirsin.</p>
     </div>
   </section>
 
   <section class="section" data-bus-page>
     <div class="container">
       <div class="fallback-banner" data-geo-banner>
-        <div>Konum izni isteniyor…</div>
+        <div><strong>Konum için bir kez dokunman gerekir.</strong> İzin vermezsen aşağıdaki duraktan devam edebilirsin.</div>
+        <button type="button" class="btn btn-primary" data-ask-geo>Konumumu kullan</button>
       </div>
 
       <div class="soft-card" style="margin-top:16px">
@@ -66,7 +67,7 @@
       <div class="bus-layout" style="margin-top:16px">
         <div data-live-view>
           <div class="map-panel">
-            <svg class="map-canvas" data-map role="img" aria-label="Sahte hat haritası"></svg>
+            <svg class="map-canvas" data-map role="img" aria-label="Hat haritası"></svg>
             <div class="map-legend">Yeşil çizgi: hat · B: otobüs · beyaz nokta: konum</div>
           </div>
           <div class="soft-card eta-card" data-eta style="margin-top:16px">
@@ -117,12 +118,11 @@
       </div>
       <div class="footer-bottom">
         <p>© 2026 Kampüs Asistan</p>
-        <p>Örnek / mock veri ile çalışır</p>
       </div>
     </div>
   </footer>
 
   <script src="js/core.js"></script>
-  <script src="js/bus.js"></script>
+  <script src="js/bus.js?v=9"></script>
 </body>
 </html>

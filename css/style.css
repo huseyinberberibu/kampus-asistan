@@ -41,6 +41,8 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquot
   padding: 0;
 }
 
+html { overflow-x: hidden; }
+
 body {
   font-family: "Lato", "Montserrat", sans-serif;
   background: var(--bg);
@@ -48,6 +50,7 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 img { max-width: 100%; display: block; }
@@ -65,7 +68,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   width: min(var(--max), calc(100% - 32px));
+  max-width: 100%;
   margin: 0 auto;
+  min-width: 0;
 }
 
 /* Header — template: dark navy bar, uppercase nav, pill CTA */
@@ -586,14 +591,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Grade calculator */
 .tabs {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
   background: var(--surface);
   padding: 8px;
-  border-radius: 999px;
+  border-radius: 20px;
   box-shadow: var(--shadow-1);
-  width: fit-content;
+  width: 100%;
   max-width: 100%;
-  overflow-x: auto;
+  box-sizing: border-box;
+  overflow: visible;
   margin: 0 auto 24px;
 }
 
@@ -1080,8 +1088,15 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius);
   padding: 16px 18px;
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.fallback-banner > div { flex: 1; min-width: 180px; }
+
+.fallback-banner .btn {
+  flex-shrink: 0;
 }
 
 .fallback-banner.ok {
@@ -1092,9 +1107,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .chip-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 4px;
+  max-width: 100%;
 }
 
 .chip {
@@ -1167,6 +1182,13 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   gap: 16px;
   margin-bottom: 20px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.schedule-controls > div {
+  min-width: 0;
+  max-width: 100%;
 }
 
 .control-label {
@@ -1303,6 +1325,12 @@ h1, h2, h3, h4, h5, h6 {
 .day-sheet .schedule-table th:first-child,
 .day-sheet .schedule-table td:first-child {
   position: static;
+  width: 4.8em;
+  min-width: 4.8em;
+  max-width: 4.8em;
+  padding: 8px 6px;
+  font-size: 11px;
+  white-space: nowrap;
 }
 
 .course-cell {
@@ -1592,7 +1620,7 @@ h1, h2, h3, h4, h5, h6 {
   .feature-grid { grid-template-columns: 1fr 1fr; }
   .menu-grid { grid-template-columns: 1fr 1fr; }
   .form-grid.two { grid-template-columns: 1fr 1fr; }
-  .today-preview { grid-template-columns: 1.1fr 0.9fr; }
+  .today-preview { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; }
   .modal {
     border-radius: var(--radius);

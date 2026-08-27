@@ -114,7 +114,7 @@
     if (!found) {
       mount.innerHTML =
         '<div class="soft-card empty-state">' +
-          "<p>Bu tarih için menü henüz eklenmedi. Yeni ay listesi gelince <code>data/meals.json</code> dosyasına o günleri eklemen yeterli.</p>" +
+          "<p>Bu tarih için menü henüz yayınlanmadı.</p>" +
         "</div>";
       return;
     }
@@ -142,7 +142,8 @@
       if (data.meta && data.meta.breakfastTime) state.breakfastTime = data.meta.breakfastTime;
       if (data.meta && data.meta.dinnerTime) state.dinnerTime = data.meta.dinnerTime;
       const notes = document.querySelector("[data-menu-notes]");
-      if (notes && data.meta && data.meta.notes) {
+      if (notes && data.meta && data.meta.notes && data.meta.notes.length) {
+        notes.hidden = false;
         notes.innerHTML = data.meta.notes.map(function (line) {
           return "<p>" + line + "</p>";
         }).join("");
