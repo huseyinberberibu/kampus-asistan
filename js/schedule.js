@@ -227,7 +227,7 @@
     if (event.target === event.currentTarget) closeModal();
   });
 
-  Kampus.fetchJSON("data/schedule.json?v=2025-26-days")
+  Kampus.fetchJSON("data/schedule.json?v=2026-27-fall")
     .then(function (data) {
       state.data = data;
       try {
